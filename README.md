@@ -3,6 +3,8 @@ A Rust server running inside of a Docker container.
 
 The Rust server uses a modified fork of Linux Game Server Manager but uses most of the same guts.
 
+If you want to change your RCON password, replace ``__PASSWORD__`` in the Dockerfile with your favorite password.
+
 You can run your own Rust server in a Docker container like this:
 
 * Clone or download/extract this repo
