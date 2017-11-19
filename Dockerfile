@@ -21,9 +21,7 @@ ADD cfg/server.cfg /home/rust/serverfiles/server/rustserver/cfg/server.cfg
 RUN chown rust /home/rust/serverfiles/server/rustserver/cfg/server.cfg
 
 USER rust
-RUN sed -i s/_CHANGEME_/CHANGEME/g /home/rust/lgsm/config-lgsm/rustserver/_default.cfg
 RUN echo rconpassword="__PASSWORD__" > /home/rust/lgsm/config-lgsm/rustserver/rustserver.cfg
-RUN touch /home/rust/lgsm/config-lgsm/rustserver/test.cfg
 
 EXPOSE 28015/udp
 EXPOSE 28016/tcp
