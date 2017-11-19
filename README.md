@@ -1,11 +1,15 @@
 # rust-docker
-A Rust server running inside of a Docker container
+A Rust server running inside of a Docker container.
+
+The Rust server uses a modified fork of Linux Game Server Manager but uses most of the same guts.
 
 You can run your own Rust server in a Docker container like this:
 
 * Clone or download/extract this repo
 * docker build . -t rustserver
 * docker run -d -p 28015:28015/udp -p 28016:28016/tcp rustserver
+
+Don't forget to change ``server.description`` in the server.cfg, otherwise your server will have the same description as mine!
 
 You can access the server logs by doing ``docker logs rustserver`` or by attaching to the container directly.
 
