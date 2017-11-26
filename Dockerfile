@@ -3,7 +3,7 @@ RUN dnf install -y glibc.i686 libstdc++.i686
 RUN mkdir /steamcmd
 WORKDIR /steamcmd
 RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zvxf -
-RUN ./steamcmd.sh +login anonymous +force_install_dir \rust +app_update 258550 validate +quit
+RUN ./steamcmd.sh +login anonymous +force_install_dir /rust +app_update 258550 validate +quit
 
 # RUN adduser rust
 # RUN chown rust /home/rust
@@ -26,4 +26,5 @@ RUN ./steamcmd.sh +login anonymous +force_install_dir \rust +app_update 258550 v
 # EXPOSE 28015/udp
 # EXPOSE 28016/tcp
 
-CMD ["/steamcmd/steamcmd.sh"]
+WORKDIR /rust
+CMD ["./RustDedicated -batchmode"]
