@@ -1,0 +1,21 @@
+from: fedora
+user: rust
+working_dir: /home/rust/rustserver
+environment:
+  SERVER_ID: '{{ server_id }}'
+  IP: '{{ ip }}'
+  PORT: '{{ port }}'
+  RCONPORT: '{{ rconport }}'
+  RCONPASSWORD: '{{ rconpassword }}'
+  RCONWEB: '{{ rconweb }}'
+  SERVERNAME: '{{ servername }}'
+  MAXPLAYERS: '{{ maxplayers }}'
+  SEED: '{{ seed }}'
+  WORLDSIZE: '{{ worldsize }}'
+  SAVEINTERVAL: '{{ saveinterval }}'
+  TICKRATE: '{{ tickrate }}'
+ports:
+- 28015/udp
+- 28016/tcp
+command:
+- /home/rust/rustserver/run.sh
