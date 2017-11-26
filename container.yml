@@ -1,6 +1,7 @@
+version: "2"
 settings:
-  conductor_base: fedora
+  conductor_base: fedora:26
 services:
-  ? ''
-  : roles:
-    - ''
+  rust:
+    roles:
+      - rust
