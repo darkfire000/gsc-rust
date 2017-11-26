@@ -1,30 +1,21 @@
 FROM fedora
 RUN dnf install -y glibc.i686 libstdc++.i686
-RUN mkdir /steamcmd
-WORKDIR /steamcmd
+
+RUN adduser rust
+RUN chown rust /home/rust
+USER rust
+
+RUN mkdir /home/rust/steamcmd
+WORKDIR /home/rust/steamcmd
 RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zvxf -
-RUN ./steamcmd.sh +login anonymous +force_install_dir /rust +app_update 258550 validate +quit
+RUN ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app_update 258550 validate +quit
+ADD run.sh /home/rust/rustserver/run.sh
+USER root
+RUN chown rust /home/rust/rustserver/run.sh
+USER rust
+WORKDIR /home/rust/rustserver
 
-# RUN adduser rust
-# RUN chown rust /home/rust
+EXPOSE 28015/udp
+EXPOSE 28016/tcp
 
-# ADD linuxgsm.sh /home/rust/linuxgsm.sh
-# RUN chown rust /home/rust/linuxgsm.sh
-# USER rust
-# WORKDIR /home/rust
-# RUN bash linuxgsm.sh rustserver
-# RUN ./rustserver auto-install
-
-# USER root
-
-# ADD cfg/server.cfg /home/rust/serverfiles/server/rustserver/cfg/server.cfg
-# RUN chown rust /home/rust/serverfiles/server/rustserver/cfg/server.cfg
-
-# USER rust
-# RUN echo rconpassword="__PASSWORD__" > /home/rust/lgsm/config-lgsm/rustserver/rustserver.cfg
-
-# EXPOSE 28015/udp
-# EXPOSE 28016/tcp
-
-WORKDIR /rust
-CMD ["./RustDedicated -batchmode"]
+CMD ["/home/rust/rustserver/run.sh"]
