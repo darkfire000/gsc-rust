@@ -1,4 +1,18 @@
-- shell: dnf install -y glibc.i686 libstdc++.i686
+- name: Install glibc.i686
+  dnf:
+    name: glibc.i686
+    state: latest
+- name: Install libstdc++.i686
+  dnf:
+    name: libstdc++.i686
+    state: latest
+# - name: Setup rust user
+#   user:
+#     name: rust
+# - name: Download steamcmd
+#   get_url: 
+#     url: https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+#     dest: /home/rust/steamcmd
 - shell: adduser rust
 - shell: chown rust /home/rust
 - shell: mkdir /home/rust/steamcmd
