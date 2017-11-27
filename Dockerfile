@@ -24,31 +24,4 @@ RUN chown -R rust:rust /home/rust/rustserver/server/${server_id}/
 USER rust
 WORKDIR /home/rust/rustserver
 
-ARG ip="0.0.0.0"
-ARG port="28015"
-ARG rconport="28016"
-ARG rconpassword="change_me"
-ARG rconweb="1"
-ARG servername="my_server"
-ARG maxplayers="2"
-ARG seed="1"
-ARG worldsize="2000"
-ARG saveinterval="300"
-ARG tickrate="30"
-
-ENV IP=${ip}
-ENV PORT=${port}
-ENV RCONPORT=${rconport}
-ENV RCONPASSWORD=${rconpassword}
-ENV RCONWEB=${rconweb}
-ENV SERVERNAME=${servername}
-ENV MAXPLAYERS=${maxplayers}
-ENV SEED=${seed}
-ENV WORLDSIZE=${worldsize}
-ENV SAVEINTERVAL=${saveinterval}
-ENV TICKRATE=${tickrate}
-
-EXPOSE 28015/udp
-EXPOSE 28016/tcp
-
 CMD ["/home/rust/rustserver/run.sh"]
