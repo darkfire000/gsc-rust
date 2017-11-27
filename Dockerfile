@@ -2,7 +2,7 @@ FROM fedora
 
 RUN dnf install -y glibc.i686 libstdc++.i686
 RUN adduser rust
-RUN chown rust /home/rust
+RUN chown rust:rust /home/rust
 
 USER rust
 RUN mkdir /home/rust/steamcmd
@@ -11,8 +11,6 @@ RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.t
 RUN ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app_update 258550 validate +quit
 
 USER root
-ARG server_id=rust
-ENV SERVER_ID=${server_id}
 
 ADD run.sh /home/rust/rustserver/run.sh
 ADD cfg/bans.cfg /home/rust/rustserver/server/${server_id}/cfg/bans.cfg
