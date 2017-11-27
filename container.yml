@@ -2,6 +2,7 @@ version: "2"
 settings:
   conductor_base: fedora:26
 services:
-  rust:
+  rust-server:
     roles:
+      # - steamcmd
       - rust

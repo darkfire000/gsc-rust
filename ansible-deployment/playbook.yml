@@ -1,0 +1,86 @@
+  - name: Deploy rust-docker
+    hosts: localhost
+    gather_facts: false
+    tasks:
+      - docker_service:
+            definition:
+                services: &id001
+                    rust:
+                        image: rust-docker-rust:20171126225140
+                        environment:
+                            SERVER_ID: rust
+                            IP: '"0.0.0.0"'
+                            PORT: '"28015"'
+                            RCONPORT: '"28016"'
+                            RCONPASSWORD: '"change_me"'
+                            RCONWEB: '"1"'
+                            SERVERNAME: '"my_server"'
+                            MAXPLAYERS: '"2"'
+                            SEED: '"1"'
+                            WORLDSIZE: '"2000"'
+                            SAVEINTERVAL: '"300"'
+                            TICKRATE: '"30"'
+                        working_dir: /home/rust/rustserver
+                        command:
+                          - /home/rust/rustserver/run.sh
+                        user: rust
+                        ports:
+                          - 28015/udp
+                          - 28016/tcp
+                version: '2'
+            state: present
+            project_name: rust-docker
+        tags:
+          - start
+      - docker_service:
+            definition:
+                services: *id001
+                version: '2'
+            state: present
+            project_name: rust-docker
+            restarted: true
+        tags:
+          - restart
+      - docker_service:
+            definition:
+                services: *id001
+                version: '2'
+            state: present
+            project_name: rust-docker
+            stopped: true
+        tags:
+          - stop
+      - docker_service:
+            definition:
+                services: *id001
+                version: '2'
+            state: absent
+            project_name: rust-docker
+            remove_volumes: yes
+        tags:
+          - destroy
+      - docker_image:
+            state: absent
+            force: yes
+            name: rust-docker-rust:20171126233619
+        tags: destroy
+      - docker_image:
+            state: absent
+            force: yes
+            name: rust-docker-rust:20171126231454
+        tags: destroy
+      - docker_image:
+            state: absent
+            force: yes
+            name: rust-docker-rust:20171126225140
+        tags: destroy
+      - docker_image:
+            state: absent
+            force: yes
+            name: rust-docker-rust:latest
+        tags: destroy
+      - docker_image:
+            state: absent
+            force: yes
+            name: rust-docker-conductor:latest
+        tags: destroy

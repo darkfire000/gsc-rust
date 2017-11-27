@@ -6,68 +6,74 @@
   dnf:
     name: libstdc++.i686
     state: latest
-# - name: Setup rust user
-#   user:
-#     name: rust
-# - name: Download steamcmd
-#   get_url: 
-#     url: https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-#     dest: /home/rust/steamcmd
-- shell: adduser rust
-- shell: chown rust /home/rust
-- shell: mkdir /home/rust/steamcmd
-  remote_user: rust
-- shell: curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz"
-    | tar zvxf -
-  remote_user: rust
-  args:
-    chdir: /home/rust/steamcmd
-- shell: ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app_update
-    258550 validate +quit
-  remote_user: rust
-  args:
-    chdir: /home/rust/steamcmd
-- name: Ensure /home/rust/rustserver exists
-  file:
-    path: /home/rust/rustserver
-    state: directory
-  remote_user: root
-- copy:
-    src: run.sh
-    dest: /home/rust/rustserver/run.sh
-  remote_user: root
-- name: Ensure /home/rust/rustserver/server/{{ server_id }}/cfg exists
-  file:
-    path: /home/rust/rustserver/server/{{ server_id }}/cfg
-    state: directory
-  remote_user: root
-- copy:
-    src: cfg/bans.cfg
-    dest: /home/rust/rustserver/server/{{ server_id }}/cfg/bans.cfg
-  remote_user: root
-- name: Ensure /home/rust/rustserver/server/{{ server_id }}/cfg exists
-  file:
-    path: /home/rust/rustserver/server/{{ server_id }}/cfg
-    state: directory
-  remote_user: root
-- copy:
-    src: cfg/server.cfg
-    dest: /home/rust/rustserver/server/{{ server_id }}/cfg/server.cfg
-  remote_user: root
-- name: Ensure /home/rust/rustserver/server/{{ server_id }}/cfg exists
-  file:
-    path: /home/rust/rustserver/server/{{ server_id }}/cfg
-    state: directory
-  remote_user: root
-- copy:
-    src: cfg/users.cfg
-    dest: /home/rust/rustserver/server/{{ server_id }}/cfg/users.cfg
-  remote_user: root
-- shell: chown rust:rust /home/rust/rustserver/run.sh
-  remote_user: root
-  args:
-    chdir: /home/rust/steamcmd
-- shell: chown -R rust:rust /home/rust/rustserver/server/${server_id}/
-  remote_user: root
-  args:
-    chdir: /home/rust/steamcmd
+- name: Setup steamcmd user
+  user:
+    name: steamcmd
+  remote_user: steamcmd
+- name: Download steamcmd
+  get_url: 
+    url: https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+    dest: /home/steamcmd/steamcmd_linux.tar.gz
+- name: Extract steamcmd
+  unarchive:
+    src: /home/steamcmd/steamcmd_linux.tar.gz
+    dest: /home/steamcmd
+    group: steamcmd
+    owner: steamcmd
+    copy: no
+#   args:
+#     chdir: /home/rust/steamcmd
+# - shell: ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app_update 258550 validate +quit
+
+#   remote_user: rust
+#   args:
+#     chdir: /home/rust/steamcmd
+# - shell: ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app_update
+#     258550 validate +quit
+#   remote_user: rust
+#   args:
+#     chdir: /home/rust/steamcmd
+# - name: Ensure /home/rust/rustserver exists
+#   file:
+#     path: /home/rust/rustserver
+#     state: directory
+#   remote_user: root
+# - copy:
+#     src: run.sh
+#     dest: /home/rust/rustserver/run.sh
+#   remote_user: root
+# - name: Ensure /home/rust/rustserver/server/{{ server_id }}/cfg exists
+#   file:
+#     path: /home/rust/rustserver/server/{{ server_id }}/cfg
+#     state: directory
+#   remote_user: root
+# - copy:
+#     src: cfg/bans.cfg
+#     dest: /home/rust/rustserver/server/{{ server_id }}/cfg/bans.cfg
+#   remote_user: root
+# - name: Ensure /home/rust/rustserver/server/{{ server_id }}/cfg exists
+#   file:
+#     path: /home/rust/rustserver/server/{{ server_id }}/cfg
+#     state: directory
+#   remote_user: root
+# - copy:
+#     src: cfg/server.cfg
+#     dest: /home/rust/rustserver/server/{{ server_id }}/cfg/server.cfg
+#   remote_user: root
+# - name: Ensure /home/rust/rustserver/server/{{ server_id }}/cfg exists
+#   file:
+#     path: /home/rust/rustserver/server/{{ server_id }}/cfg
+#     state: directory
+#   remote_user: root
+# - copy:
+#     src: cfg/users.cfg
+#     dest: /home/rust/rustserver/server/{{ server_id }}/cfg/users.cfg
+#   remote_user: root
+# - shell: chown rust:rust /home/rust/rustserver/run.sh
+#   remote_user: root
+#   args:
+#     chdir: /home/rust/steamcmd
+# - shell: chown -R rust:rust /home/rust/rustserver/server/${server_id}/
+#   remote_user: root
+#   args:
+#     chdir: /home/rust/steamcmd

@@ -1,0 +1,23 @@
+- name: Install glibc.i686
+  dnf:
+    name: glibc.i686
+    state: latest
+- name: Install libstdc++.i686
+  dnf:
+    name: libstdc++.i686
+    state: latest
+- name: Setup steamcmd user
+  user:
+    name: steamcmd
+  remote_user: steamcmd
+- name: Download steamcmd
+  get_url: 
+    url: https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+    dest: /home/steamcmd/steamcmd_linux.tar.gz
+- name: Extract steamcmd
+  unarchive:
+    src: /home/steamcmd/steamcmd_linux.tar.gz
+    dest: /home/steamcmd
+    group: steamcmd
+    owner: steamcmd
+    copy: no
