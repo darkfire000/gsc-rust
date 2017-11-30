@@ -1,0 +1,9 @@
+version: "3"
+services:
+  rust-server:
+    build: .
+    env_file:
+      - vars.env
+    ports:
+    - "28015:28015/udp"
+    - "28016:28016"

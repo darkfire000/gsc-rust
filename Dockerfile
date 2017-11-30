@@ -1,29 +1,25 @@
-FROM ubuntu:16.04
-ENV TERM=xterm-256color
+FROM fedora
 
-RUN dpkg --add-architecture i386
-RUN apt-get update
-RUN apt-get install -y nano mailutils postfix curl wget file bzip2 gzip unzip bsdmainutils python util-linux ca-certificates binutils bc tmux lib32gcc1 libstdc++6 libstdc++6:i386 libcurl4-gnutls-dev:i386 libtcmalloc-minimal4:i386 lib32tinfo5 lib32ncurses5
-
+RUN dnf install -y glibc.i686 libstdc++.i686
 RUN adduser rust
-RUN chown rust /home/rust
+RUN chown rust:rust /home/rust
 
-ADD linuxgsm.sh /home/rust/linuxgsm.sh
-RUN chown rust /home/rust/linuxgsm.sh
 USER rust
-WORKDIR /home/rust
-RUN bash linuxgsm.sh rustserver
-RUN ./rustserver auto-install
+RUN mkdir /home/rust/steamcmd
+WORKDIR /home/rust/steamcmd
+RUN curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zvxf -
+RUN ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app_update 258550 validate +quit
 
 USER root
 
-ADD cfg/server.cfg /home/rust/serverfiles/server/rustserver/cfg/server.cfg
-RUN chown rust /home/rust/serverfiles/server/rustserver/cfg/server.cfg
+ADD run.sh /home/rust/rustserver/run.sh
+ADD cfg/bans.cfg /home/rust/rustserver/server/${server_id}/cfg/bans.cfg
+ADD cfg/server.cfg /home/rust/rustserver/server/${server_id}/cfg/server.cfg
+ADD cfg/users.cfg /home/rust/rustserver/server/${server_id}/cfg/users.cfg
+RUN chown rust:rust /home/rust/rustserver/run.sh
+RUN chown -R rust:rust /home/rust/rustserver/server/${server_id}/
 
 USER rust
-RUN echo rconpassword="__PASSWORD__" > /home/rust/lgsm/config-lgsm/rustserver/rustserver.cfg
+WORKDIR /home/rust/rustserver
 
-EXPOSE 28015/udp
-EXPOSE 28016/tcp
-
-CMD ["/home/rust/rustserver", "debug"]
+CMD ["/home/rust/rustserver/run.sh"]
