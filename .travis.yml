@@ -4,4 +4,8 @@ services:
   - docker
 script:
   - docker-compose config
-  - if [ $TRAVIS_BRANCH = 'unstable' ]; docker-compose build; fi
+deploy:
+  - provider: script
+  - script: docker-compose build
+  - on:
+      branch: unstable
