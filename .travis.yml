@@ -4,5 +4,5 @@ services:
   - docker
 script:
   - docker-compose config
-if: branch = unstable
+if: branch IS unstable
   - docker-compose build
