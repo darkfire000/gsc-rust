@@ -6,6 +6,4 @@ script:
   - docker-compose config
 deploy:
   - provider: script
-  - script: docker-compose build
-  - on:
-      branch: unstable
+  
