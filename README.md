@@ -1,5 +1,5 @@
 # rust-docker
-A Rust server running inside of a Docker container. It uses a modified fork of Linux Game Server Manager but uses most of the same guts.
+A Rust server running inside of a Docker container.
 
 You can run your own Rust server in a Docker container like this:
 
