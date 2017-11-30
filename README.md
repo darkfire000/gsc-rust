@@ -1,5 +1,5 @@
 # rust-docker
-A Rust server running inside of a Docker container.
+A Rust server running inside of a Docker container
 
 You can run your own Rust server in a Docker container like this:
 
