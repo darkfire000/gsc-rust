@@ -1,10 +1,7 @@
-env:
-  - DOCKER_COMPOSE_VERSION=1.17.1
 sudo: required
 language: node_js
 services:
   - docker
-install:
-  # - sudo apt-get install -y docker-compose
 script:
+  - if: branch = stable
   - docker-compose config
