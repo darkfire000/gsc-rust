@@ -4,7 +4,7 @@ services:
   - docker
 script:
   - docker-compose config
-  - if [ $TRAVIS_BRANCH == 'unstable' ];
+  - if [ $TRAVIS_BRANCH == 'stable' ];
     then docker-compose build;
     else echo skipping build...;
     fi
