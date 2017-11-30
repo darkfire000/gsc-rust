@@ -1,4 +1,4 @@
-FRO fedora
+FROM fedora
 
 RUN dnf install -y glibc.i686 libstdc++.i686
 RUN adduser rust
@@ -12,10 +12,10 @@ RUN ./steamcmd.sh +login anonymous +force_install_dir /home/rust/rustserver +app
 
 USER root
 
-ADD run.sh /home/rust/rustserver/run.sh
-ADD cfg/bans.cfg /home/rust/rustserver/server/${server_id}/cfg/bans.cfg
-ADD cfg/server.cfg /home/rust/rustserver/server/${server_id}/cfg/server.cfg
-ADD cfg/users.cfg /home/rust/rustserver/server/${server_id}/cfg/users.cfg
+COPY run.sh /home/rust/rustserver/run.sh
+COPY cfg/bans.cfg /home/rust/rustserver/server/${server_id}/cfg/bans.cfg
+COPY cfg/server.cfg /home/rust/rustserver/server/${server_id}/cfg/server.cfg
+COPY cfg/users.cfg /home/rust/rustserver/server/${server_id}/cfg/users.cfg
 RUN chown rust:rust /home/rust/rustserver/run.sh
 RUN chown -R rust:rust /home/rust/rustserver/server/${server_id}/
 
