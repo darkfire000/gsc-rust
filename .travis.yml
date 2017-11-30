@@ -3,4 +3,8 @@ language: node_js
 services:
   - docker
 script:
-  - docker-compose build
+  - docker-compose config
+  - if [ $TRAVIS_BRANCH == 'unstable' ];
+    then docker-compose build --compress;
+    else echo skipping build...;
+    fi
