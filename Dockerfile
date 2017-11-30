@@ -1,4 +1,4 @@
-FROM fedora
+FRO fedora
 
 RUN dnf install -y glibc.i686 libstdc++.i686
 RUN adduser rust
