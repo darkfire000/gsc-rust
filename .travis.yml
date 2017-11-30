@@ -2,9 +2,5 @@ sudo: required
 language: node_js
 services:
   - docker
-stages: 
-  - name: test
-  - echo test
-# script:
-#   - docker-compose config
-#   - if [ $TRAVIS_BRANCH = 'unstable' ]; docker-compose build; fi
+script:
+  - docker-compose config
