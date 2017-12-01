@@ -50,4 +50,19 @@ Once you've got the dependencies installed, you'll want to clone or download thi
 
 Docker should begin reporting the status of the container into your terminal as it is built. It typically takes around 10 minutes to build the container, depending on your CPU & network speed.
 
-Once Docker is finished building the container, it will automatically run and attach itself to it. At this point, you can safely detach the terminal window from the container and log into your server.
+Once Docker is finished building the container, it will automatically run and attach itself to it. If you don't want to keep a terminal window open for the server, you can run Docker with the -d parameter:
+
+``docker-compose up -d``
+
+### Viewing Logs
+Because the server logs reside inside the container itself, the container is configured to output *everything* from the server logs to stdout. You can output the server logs to your terminal by running:
+
+``docker-compose logs``
+
+If you have more than one server running, you will get logs for *all* of the servers. You can specify which server to pull logs from by passing the container name as a parameter:
+
+``docker-compose logs rust-server_1``
+
+If you want to output the logs to a file, you will want to use the regular ``docker logs`` command because ``docker-compose logs`` adds color and formating which does not translate well into actual log files:
+
+``docker logs rust-server_1 > my.log``
