@@ -1,5 +1,6 @@
 # rust-docker
-A Rust server running inside of a Docker container
+[![Maintainability](https://api.codeclimate.com/v1/badges/e8d2f93056ca8bdf8444/maintainability)](https://codeclimate.com/github/egee-irl/rust-docker/maintainability)
+A Rust server running inside of a Docker container.
 
 You can run your own Rust server in a Docker container like this:
 
