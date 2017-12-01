@@ -1,8 +1,0 @@
-sudo: required
-language: javascript
-services:
-  - docker
-install:
-  - sudo apt-get install -y docker-compose
-script:
-  - docker-compose config
