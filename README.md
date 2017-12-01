@@ -30,7 +30,7 @@ Finally, it is handy to add your user to the Docker group, unless you enjoy runn
 ``sudo groupadd docker && sudo usermod -aG docker $USER``
 
 ## Running The Dedicated Server
-Once you've installed Docker & Docker-Compose, you are *pretty much* ready to run your server. However, before you dive into the deep into the pool, there are a few things to consider.
+Once you've installed Docker & Docker-Compose, you are *pretty much* ready to run your server. However, before you dive into the deep side of the pool, there are a few things to consider.
 
 ### Considerations
 1. Dedicated servers require a *decent* amount of computing power. If your machine doesn't meet the requirements for running a dedicated server, don't even try it; you may lock up and or crash your computer.
@@ -42,3 +42,12 @@ Once you've installed Docker & Docker-Compose, you are *pretty much* ready to ru
 4. Docker containers are generally designed to be ephemeral. Don't store anything such as important player or configuration data in your container.
 
 5. If you are running Linux, make sure you have a new-ish kernel. Docker tends to take advantage and in some cases depend on features only available in more recent kernels.
+
+### Building & Running The Server
+Once you've got the dependencies installed, you'll want to clone or download this repository. After you've done that, open a terminal window, navigate to repository directory, and run:
+
+``docker-compose up``
+
+Docker should report the status of the container as it is built in your terminal. Typically it takes around 10 minutes to build the container, depending on your CPU & network speed.
+
+Once Docker is finished building the container, it will automatically run and attach itself to it. At this point, you can safely detach the terminal window from the container and log into your server.
