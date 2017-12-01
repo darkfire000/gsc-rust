@@ -28,3 +28,17 @@ Once Docker is installed, you will need to enable and start the Docker daemon:
 Finally, it is handy to add your user to the Docker group, unless you enjoy running ``sudo`` for each Docker command:
 
 ``sudo groupadd docker && sudo usermod -aG docker $USER``
+
+## Running The Dedicated Server
+Once you've installed Docker & Docker-Compose, you are *pretty much* ready to run your server. However, before you dive into the deep into the pool, there are a few things to consider.
+
+### Considerations
+1. Dedicated servers require a *decent* amount of computing power. If your machine doesn't meet the requirements for running a dedicated server, don't even try it; you may lock up and or crash your computer.
+
+2. Docker is largely designed for head-less automation. As such, if you launch a dedicated server and then close the window or lose track of it, you may forget that you have a dedicated server running in the background.
+
+3. Docker images tend to be large. The resulting image for the dedicated server could (probably) be larger than 1gb.
+
+4. Docker containers are generally designed to be ephemeral. Don't store anything such as important player or configuration data in your container.
+
+5. If you are running Linux, make sure you have a new-ish kernel. Docker tends to take advantage and in some cases depend on features only available in more recent kernels.
