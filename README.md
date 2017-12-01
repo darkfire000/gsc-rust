@@ -17,7 +17,7 @@ To get started, you'll need to install Docker & Docker-Compose.
 You can download and install Docker & Docker-Compose as one package from the <a href="https://docs.docker.com/compose/install/#install-compose">Docker website</a> or install Docker using <a href="https://chocolatey.org/packages/docker">Chocolatey</a>. Keep in mind that installing Docker from the website or from Chocolatey requires elevated Powershell permissions.
 
 ### Linux 
-Docker-Compose is available in nearly every distribution repository and typically installs all the required packages as dependencies. A typical install command would look something like this:
+Docker-Compose is available in nearly every distribution repository and typically installs all the required packages as dependencies. Using Debian/Ubuntu as an example, a typical install command would look something like this:
 
 `` sudo apt install -y docker-compose``
 
