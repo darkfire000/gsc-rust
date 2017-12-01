@@ -1,5 +1,5 @@
 # rust-docker
-[![Maintainability](https://api.codeclimate.com/v1/badges/e8d2f93056ca8bdf8444/maintainability)](https://codeclimate.com/github/egee-irl/rust-docker/maintainability)
+<a href="www.egee.io"><img src="https://i.imgur.com/Mvjrkqo.png" alt="Rust on Docker" width="300" /></a>
 [![Build Status](https://travis-ci.org/egee-irl/rust-docker.svg?branch=unstable)](https://travis-ci.org/egee-irl/rust-docker)
 [![Discord](https://discordapp.com/api/guilds/183740337976508416/widget.png?style=shield)](www.egee.io)
 
