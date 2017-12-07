@@ -48,7 +48,7 @@ Once you've got the dependencies installed, you'll want to clone or download thi
 
 ``docker-compose up``
 
-Docker should begin reporting the status of the container into your terminal as it is built. It typically takes around 10 minutes to build the container, depending on your CPU & network speed.
+Docker should begin reporting the status of the container into your terminal as it is built. It will take about a minute or three to build the container, depending on your CPU & network speed.
 
 Once Docker is finished building the container, it will automatically run and attach itself to it. If you don't want to keep a terminal window open for the server, you can run Docker with the -d parameter:
 
