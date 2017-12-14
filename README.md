@@ -2,19 +2,23 @@
 <a href="www.egee.io"><img src="https://i.imgur.com/Mvjrkqo.png" alt="Rust on Docker" width="300" /></a>
 
 [![Build Status](https://travis-ci.org/egee-irl/rust-docker.svg?branch=unstable)](https://travis-ci.org/egee-irl/rust-docker)
-[![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat-square)](https://discord.gg/42PMX5N)
-[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)](https://github.com/egee-irl/rust-docker/blob/stable/LICENSE)
+[![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat)](https://discord.gg/42PMX5N)
+[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/rust-docker/blob/stable/LICENSE)
 
-Host your own dedicated game server and quick and simple as possible by running one command:
+Host your own dedicated game server and quick and simple as possible with one command:
 
 ``docker-compose up``
 
 That's right - a single command will result in your very own dedicated game server! And its fully cross-platform; run it on Linux *or* Windows. That's the power of containers!
 
+The information in this readme is generic and applies to all of the game containers. Check out the <a href="https://github.com/egee-irl/rust-docker/wiki">Wiki</a> for information specific to *this* particular game.
+
 ## Getting Started
-To get started, you'll need to install Docker & Docker-Compose. 
+To get started, you'll need to install the Docker-Engine (v1.10.0+) & Docker-Compose (v1.6.0+). 
 
 ### Windows
+Docker supports Windows 10 Professional/Enterprise, and Windows Server 2016+. Docker does *not* support Windows 10 Home or Windows 7/8. Docker also <a href="https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install">requires</a> HyperV enabled.
+
 You can download and install Docker & Docker-Compose as one package from the <a href="https://docs.docker.com/compose/install/#install-compose">Docker website</a> or install Docker using <a href="https://chocolatey.org/packages/docker">Chocolatey</a>. Keep in mind that installing Docker from the website or from Chocolatey requires elevated Powershell permissions.
 
 ### Linux 
@@ -51,7 +55,7 @@ Once you've Docker-Compose installed, you'll want to clone or download this repo
 
 Docker should begin reporting the status of the container into your terminal as it is built. It will take about a minute or three to build the container, depending on your CPU & network speed.
 
-Once Docker is finished building the container, it will automatically run and attach itself to it. If you don't want to keep a terminal window open for the server, you can run Docker with the -d parameter:
+Once Docker is finished building the container, it will automatically run and attach itself to it. If you don't want to keep a terminal window open for the server, you can run Docker-Compose with the -d parameter:
 
 ``docker-compose up -d``
 
@@ -67,12 +71,3 @@ If you have more than one server running, you will get logs for *all* of the ser
 If you want to output the logs to a file, you will want to use the regular ``docker logs`` command because ``docker-compose logs`` adds color and formating which does not translate well into actual log files:
 
 ``docker logs rust-server_1 > my.log``
-
-### Configurating The Game Settings
-Check the wiki for this repo.
-
-## Technical Stuff
-
-### How Does All Of This Work?
-
-Docker is a platform for creating, sharing, and running applications. A Docker container is sort of like a tiny virtual machine build specifically to run an application, in our case, a dedicated game server. The game server is actually running on Linux inside of a tiny Docker container.
