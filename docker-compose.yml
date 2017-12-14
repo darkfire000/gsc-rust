@@ -1,6 +1,8 @@
-version: "3"
+version: "2.3"
 services:
   rust-server:
+    cpus: 0.5
+    mem_reservation: 2048m
     build: .
     env_file:
       - vars.env
