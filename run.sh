@@ -1,6 +1,6 @@
 #!/bin/bash
-touch /home/rust/rustserver/server.log
-/home/rust/rustserver/RustDedicated \
+touch /opt/rustserver/server.log
+/opt/rustserver/RustDedicated \
   +server.ip ${IP} \
   +server.seed ${SEED} \
   +server.port ${PORT} \
@@ -15,4 +15,4 @@ touch /home/rust/rustserver/server.log
   +rcon.port ${RCONPORT} \
   +rcon.password ${RCONPASSWORD} \
   -logfile server.log &
-tail -f /home/rust/rustserver/server.log
+tail -f /opt/rustserver/server.log

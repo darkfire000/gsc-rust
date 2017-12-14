@@ -1,14 +1,10 @@
 FROM egeeio/rustserver
 
-USER root
-COPY run.sh /home/rust/rustserver/run.sh
-COPY cfg/bans.cfg /home/rust/rustserver/server/${server_id}/cfg/bans.cfg
-COPY cfg/server.cfg /home/rust/rustserver/server/${server_id}/cfg/server.cfg
-COPY cfg/users.cfg /home/rust/rustserver/server/${server_id}/cfg/users.cfg
-RUN chown rust:rust /home/rust/rustserver/run.sh
-RUN chown -R rust:rust /home/rust/rustserver/server/${server_id}/
+COPY run.sh /opt/rustserver/run.sh
+COPY cfg/bans.cfg /opt/rustserver/server/${server_id}/cfg/bans.cfg
+COPY cfg/server.cfg /opt/rustserver/server/${server_id}/cfg/server.cfg
+COPY cfg/users.cfg /opt/rustserver/server/${server_id}/cfg/users.cfg
 
-USER rust
-WORKDIR /home/rust/rustserver
-ENV LD_LIBRARY_PATH=/home/rust/rustserver:/home/rust/rustserver/RustDedicated_Data:{$LD_LIBRARY_PATH}
-CMD ["/home/rust/rustserver/run.sh"]
+WORKDIR /opt/rustserver
+ENV LD_LIBRARY_PATH=/opt/rustserver:/opt/rustserver/RustDedicated_Data:{$LD_LIBRARY_PATH}
+CMD ["/opt/rustserver/run.sh"]
