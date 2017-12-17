@@ -14,7 +14,7 @@ That's right - a single command will result in your very own dedicated game serv
 The information in this readme is generic and applies to all of the game containers. Check out the <a href="https://github.com/egee-irl/rust-docker/wiki">Wiki</a> for information specific to *this* particular game.
 
 ## Getting Started
-To get started, you'll need to install the Docker-Engine (v1.10.0+) & Docker-Compose (v1.6.0+). 
+To get started, you'll need to install the Docker-Engine (v1.10.0+) & Docker-Compose (v1.17.0+). 
 
 ### Windows
 Docker supports Windows 10 Professional/Enterprise, and Windows Server 2016+. Docker does *not* support Windows 10 Home or Windows 7/8. Docker also <a href="https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install">requires</a> HyperV enabled.
@@ -59,6 +59,11 @@ Once Docker is finished building the container, it will automatically run and at
 
 ``docker-compose up -d``
 
+### Updating The Server
+Because Docker containers are somewhat designed to be ephemeral, updating them can be touchy. There is an update script called ``update.sh`` which is used to update the _game data_. You can run the update script against a running container by doing ``docker exec server_name update``.
+
+Updating files _other than_ game data is another story. If you are comfortable with Docker & Linux, you can access the container like this ``docker exec -it server_name bash``. Once inside the container, use ``nano`` to update your files.
+
 ### Viewing Logs
 Because the server logs reside inside the container itself, the container is configured to output *everything* from the server logs to stdout. You can output the server logs to your terminal by running:
 
@@ -71,3 +76,24 @@ If you have more than one server running, you will get logs for *all* of the ser
 If you want to output the logs to a file, you will want to use the regular ``docker logs`` command because ``docker-compose logs`` adds color and formating which does not translate well into actual log files:
 
 ``docker logs rust-server_1 > my.log``
+
+## FAQ
+Lots of questions, including technical issues, come up and this section aims to address them!
+
+#### ERROR: Version in "./docker-compose.yml" is unsupported.
+This error is probably the most common error folks run into (especially on Ubuntu!). It simply means you aren't running the latest version of Docker-Compose. Version 1.17+ is needed for CPU scaling via the Docker-Compose file. You can remedy this error by upgrading to the latest version of Docker-Compose, or commenting out the ``cpus`` attribute in the ``docker-compose.yml`` file.
+
+#### How do I change/update game configuration files?
+Short answer: you create a _new_ server. This may seem odd at first but Docker containers are more or less designed to be immutable and changing configuration data on the fly can yield unexpected results.
+
+However if you _really_ want to change or update something on your server, use ``docker exec -it server_name bash`` to access the container and then change whatever you need to from there.
+
+#### How do I backup game data?
+Currently there is no "official way" to backup game data. Unofficially, there are a two options:
+
+1. Create <a href="https://docs.docker.com/compose/compose-file/compose-file-v2/#volumes-volume_driver">Docker volumes</a> between the Host and Container using the docker-compose file.
+1. Use <a href="https://stackoverflow.com/questions/22049212/copying-files-from-docker-container-to-host">docker cp</a> to copy files/folders back and forth between the Host and Container.
+
+Creating a volume _sounds_ like the easy route but volumes on Docker can be tricky to new-comers, and volume implementation differs based on the host (Linux vs Windows, etc).
+
+The ``docker cp`` command is pretty straight forward and I recommend it if you really need to back up a file or folder.
