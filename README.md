@@ -88,6 +88,9 @@ Lots of questions, including technical issues, come up and this section aims to 
 #### ERROR: Version in "./docker-compose.yml" is unsupported.
 This error is probably the most common error folks run into (especially on Ubuntu!). It simply means you aren't running the latest version of Docker-Compose. Version 1.17+ (Compose file 2.3) is needed for CPU scaling. You can remedy this error by upgrading to the latest version of Docker-Compose, or commenting out the ``cpus`` attribute in the ``docker-compose.yml`` file.
 
+#### The server is super laggy or runs really slow!
+By default, the game server container is only allowed to use _up to_ 80% of the total available CPU, and _only_ 2GB of ram. You can easily adjust these contraints by editing the ``docker-compose.yml`` file yourself. Use <a href="https://docs.docker.com/compose/compose-file/compose-file-v2/#cpu-and-other-resources">this</a> as a reference while doing so.
+
 #### How do I change/update game configuration files on a server already running?
 Short answer: you create a _new_ server. This may seem odd at first but Docker containers are more or less designed to be immutable and changing configuration data on the fly can yield unexpected results.
 
