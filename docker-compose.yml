@@ -6,6 +6,7 @@ services:
     build: .
     environment:
       - update=/update
+      - SERVER_ID=rust
     env_file:
       - vars.env
     ports:
