@@ -3,9 +3,10 @@ services:
   rust-server:
     cpus: 0.5
     mem_reservation: 2048m
-    build: .
-    args:
-      - server_id=rust
+    build:
+      context: .
+      args:
+        - server_id=rust
     environment:
       - update=/update
     env_file:
