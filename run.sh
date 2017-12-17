@@ -2,13 +2,9 @@
 touch /opt/rustserver/server.log
 /opt/rustserver/RustDedicated \
   +server.ip ${IP} \
-  +server.seed ${SEED} \
   +server.port ${PORT} \
   +server.tickrate ${TICKRATE} \
-  +server.hostname ${SERVERNAME} \
   +server.identity ${SERVER_ID} \
-  +server.maxplayers ${MAXPLAYERS} \
-  +server.worldsize ${WORLDSIZE} \
   +server.saveinterval ${SAVEINTERVAL} \
   +rcon.web ${RCONWEB} \
   +rcon.ip ${IP} \
@@ -16,3 +12,4 @@ touch /opt/rustserver/server.log
   +rcon.password ${RCONPASSWORD} \
   -logfile server.log &
 tail -f /opt/rustserver/server.log
+
