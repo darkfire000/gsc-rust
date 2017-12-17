@@ -1,5 +1,8 @@
 FROM egeeio/rustserver
 
+ARG server_id
+ENV SERVER_ID ${server_id}
+
 COPY run.sh /usr/bin/run
 COPY update.sh /usr/bin/update
 COPY cfg/bans.cfg /opt/rustserver/server/${SERVER_ID}/cfg/bans.cfg

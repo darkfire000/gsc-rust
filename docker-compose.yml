@@ -4,9 +4,10 @@ services:
     cpus: 0.5
     mem_reservation: 2048m
     build: .
+    args:
+      - server_id=rust
     environment:
       - update=/update
-      - SERVER_ID=rust
     env_file:
       - vars.env
     ports:
