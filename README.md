@@ -1,4 +1,4 @@
-# rust-docker - a Docker container configuration for Rust
+# rust-docker - a Game Server Container for Rust
 <a href="www.egee.io"><img src="https://i.imgur.com/Mvjrkqo.png" alt="Rust on Docker" width="300" /></a>
 
 [![Build Status](https://travis-ci.org/egee-irl/rust-docker.svg?branch=unstable)](https://travis-ci.org/egee-irl/rust-docker)
@@ -9,9 +9,9 @@ Host your own dedicated game server with one command:
 
 ``docker-compose up``
 
-That's right - this single command will result in your very own dedicated game server! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
+That's right - this single command will create your very own dedicated game server! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
 
-The information in this readme is generic and applies to all of the Game Server Containers. Check out the <a href="https://github.com/egee-irl/rust-docker/wiki">Wiki</a> for information specific to *this* particular game.
+Note - this readme is generic and applies to all of the Game Server Containers. Check out the <a href="https://github.com/egee-irl/rust-docker/wiki">Wiki</a> for information specific to *this* particular game server.
 
 ## Getting Started
 To get started, you'll need to install the Docker-Engine (v1.10.0+) & Docker-Compose (v1.17.0+). 
@@ -46,9 +46,7 @@ Once you've installed Docker & Docker-Compose, you are *pretty much* ready to ru
 
 3. Docker images tend to be large. The resulting image for the dedicated server could (probably) be larger than 2gb.
 
-4. Docker containers should be thought of as ephemeral. Avoid or backup any important player or configuration data in your container.
-
-5. The following platforms are <a href="https://docs.docker.com/engine/installation/#server">officially supported</a>. Windows 10 Professional
+4. Docker containers should be thought of as ephemeral; avoid or backup any important player or configuration data in your container.
 
 ### Configuring The Server
 Game Server Containers are designed to be _almost_-zero-config; you only need to edit the game server config files in the ``cfg`` directory. You can also update the container resource usage or mount volumes by editing the ``docker-compose.yml``. The actual ``Dockerfile`` itself should not be edited unless you know what you are doing.
@@ -65,7 +63,7 @@ Once Docker is finished building the container, it will automatically run and at
 ``docker-compose up -d``
 
 ### Updating The Server
-Because Docker containers are somewhat ephemeral, updating them can be touchy. There is an update script called ``update.sh`` which is used to update the _game data_. You can run the update script against a running container by doing ``docker exec container_name update``. You get can the container name by running ``docker ps`` in the ``NAMES`` column.
+Because Docker containers are somewhat ephemeral, updating them can be touchy. There is an update utility which is used to update the _game data_. You can run the utility for a game server by doing ``docker exec container_name update``. You get can the container name by running ``docker ps`` in the ``NAMES`` column.
 
 Updating non-game data is another story. If you are comfortable with Docker & Linux, you can access the container like this ``docker exec -it container_name bash``. Once inside the container, use ``nano`` to update your files.
 
