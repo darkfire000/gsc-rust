@@ -1,9 +1,9 @@
-# rust-docker - a Game Server Container for Rust
+# gsc-rust - a Game Server Container for Rust
 <a href="www.egee.io"><img src="https://i.imgur.com/Mvjrkqo.png" alt="Rust on Docker" width="300" /></a>
 
-[![Build Status](https://travis-ci.org/egee-irl/rust-docker.svg?branch=unstable)](https://travis-ci.org/egee-irl/rust-docker)
+[![Build Status](https://travis-ci.org/egee-irl/gsc-rust.svg?branch=unstable)](https://travis-ci.org/egee-irl/gsc-rust)
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat)](https://discord.gg/42PMX5N)
-[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/rust-docker/blob/stable/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/gsc-rust/blob/stable/LICENSE)
 
 Host your own dedicated game server with one command:
 
@@ -11,7 +11,7 @@ Host your own dedicated game server with one command:
 
 That's right - this single command will create your very own dedicated game server! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
 
-Note - this readme is generic and applies to all of the Game Server Containers. Check out the <a href="https://github.com/egee-irl/rust-docker/wiki">Wiki</a> for information specific to *this* particular game server.
+Note - this readme is generic and applies to all of the Game Server Containers. Check out the <a href="https://github.com/egee-irl/gsc-rust/wiki">Wiki</a> for information specific to *this* particular game server.
 
 ## Getting Started
 To get started, you'll need to install the Docker-Engine (v1.10.0+) & Docker-Compose (v1.17.0+). 
@@ -34,7 +34,7 @@ Finally, it is handy to add your user to the Docker group, unless you enjoy runn
 
 ``sudo groupadd docker && sudo usermod -aG docker $USER``
 
-See the <a href="https://github.com/egee-irl/rust-docker/wiki">Wiki</a> for more information about configuration for this Game Server Container.
+See the <a href="https://github.com/egee-irl/gsc-rust/wiki">Wiki</a> for more information about configuration for this Game Server Container.
 
 ## Running The Dedicated Server
 Once you've installed Docker & Docker-Compose, you are *pretty much* ready to run your server. However, before you dive into the deep side of the pool, there are a few things to consider.
@@ -74,11 +74,13 @@ Because the server logs reside inside the container itself, the container is con
 
 If you have more than one server running, you will get logs for *all* of the servers. You can specify which server to pull logs from by passing the container name as a parameter:
 
-``docker-compose logs rust-server_1``
+``docker-compose logs container_name``
 
 If you want to output the logs to a file, you will want to use the regular ``docker logs`` command because ``docker-compose logs`` adds color and formating which does not translate well into actual log files:
 
-``docker logs rust-server_1 > my.log``
+``docker logs container_name > my.log``
+
+Automatic log rotation is not supported because it is outside the scope of what the Game Server Containers do. Some games support automatic log rotation out of the box but you will need to copy the logs out of the container to access them. If a game server does not support automatic log rotation and you want to archive your log files, you will need to set it up yourself.
 
 ## FAQ
 Lots of questions, including technical issues, come up and this section aims to address them!
