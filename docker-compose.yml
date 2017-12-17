@@ -1,12 +1,10 @@
 version: "2.3"
 services:
   rust-server:
-    cpus: 0.5
+    cpus: 0.8
     mem_reservation: 2048m
     build:
       context: .
-    environment:
-      - update=/update
     env_file:
       - vars.env
     ports:
