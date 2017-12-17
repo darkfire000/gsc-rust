@@ -5,8 +5,6 @@ services:
     mem_reservation: 2048m
     build:
       context: .
-      args:
-        - server_id=rust
     environment:
       - update=/update
     env_file:

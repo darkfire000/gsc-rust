@@ -1,7 +1,6 @@
 FROM egeeio/rustserver
 
-ARG server_id
-ENV SERVER_ID ${server_id}
+ENV SERVER_ID rust
 
 COPY run.sh /usr/bin/run
 COPY update.sh /usr/bin/update
