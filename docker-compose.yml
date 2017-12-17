@@ -4,8 +4,6 @@ services:
     cpus: 0.5
     mem_reservation: 2048m
     build: .
-    environment:
-      - update=/update
     env_file:
       - vars.env
     ports:
