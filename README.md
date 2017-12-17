@@ -89,7 +89,7 @@ This error is probably the most common error folks run into (especially on Ubunt
 #### How do I change/update game configuration files on a server already running?
 Short answer: you create a _new_ server. This may seem odd at first but Docker containers are more or less designed to be immutable and changing configuration data on the fly can yield unexpected results.
 
-However if you _really_ want to change or update something on your server, use ``docker exec -it container_name bash`` to access the container and then change whatever you need to from there.
+However if you _really_ want to change or update something on your server, use ``docker exec -it container_name bash`` to access the container and then change whatever you need to from there. Remember to restart the server after you've made your changes ``docker restart container_name``
 
 #### How do I backup game data?
 Currently there is no "official way" to backup game data. Unofficially, there are a two options:
@@ -102,7 +102,7 @@ Creating a volume _sounds_ like the easy route but volumes on Docker can be tric
 The ``docker cp`` command is pretty straight forward and I recommend it if you really need to back up a file or folder.
 
 #### Why aren't Docker volumes setup by default?
-Because their implementation depends on the host platform. There are obliviously differences between Windows and Linux, but there are also differences in how volumes are mounted between Linux distributions such as Ubuntu and Fedora (AppArmor vs SELinux).
+Because their implementation depends on the host platform. There are obvious differences between Windows and Linux, but there are also differences in how volumes are mounted between Linux distributions such as Ubuntu and Fedora (AppArmor vs SELinux).
 
 Feel free to submit a PR if you know a way to make volumes mount seamlessly without configuration between platforms.
 
