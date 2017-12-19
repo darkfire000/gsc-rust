@@ -11,11 +11,11 @@ Host your very own dedicated Rust server with one command:
 
 That's it! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
 
-**Note** - this readme assumes you've already installed the prerequisites for Game Server Containers. If you want to learn more and see what it takes to get started running your own Game Server Container, check out the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo.
+**Note** - this readme assumes you've already installed the prerequisites to run a Game Server Container. If you want to learn more and see what it takes to run your own Game Server Container, check out the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo.
 
 ### Starting The Server
 
-Rust is one of the easiest games to serve in a container because all of the launch parameters are passed to the server at runtime. Additional configuration keys are passed via the ``server.cfg`` file in the ``cfg`` directory.
+Rust is one of the easiest games to serve in a container because *all* of the launch parameters are passed to the server at runtime. Additional configuration keys are passed via the ``server.cfg`` file in the ``cfg`` directory.
 
 Hosting your own dedicated server is ridiculously easy:
 
@@ -26,3 +26,12 @@ Docker should start downloading the base ``rustserver`` image and then begin bui
 
 ### Configuring The Server
 
+There are 3 config files you may want to change before making your game server public. The config files are:
+
+<a href="https://github.com/egee-irl/gsc-rust/wiki/server.cfg">server.cfg</a> - This is the main config file for the whole server. Almost much everything you'll want to do to set the server up will be found here.
+
+<a href="https://github.com/egee-irl/gsc-rust/wiki/users.cfg">users.cfg</a> - If you have folks you want to be persistent admins of your server, set them in this file so that they are active admins when the server starts up.
+
+<a href="https://github.com/egee-irl/gsc-rust/wiki/bans.cfg">ban.cfg</a> - If there's some asshat you never want joining your server, set them in this file so the ban is active as soon as the server starts.
+
+<a href="https://github.com/egee-irl/gsc-rust/wiki/server.log">server.log</a> - Not a config file but an equally important file that stores all the server activity.
