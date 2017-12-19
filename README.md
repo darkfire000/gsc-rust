@@ -35,3 +35,9 @@ There are 3 config files you may want to change before making your game server p
 <a href="https://github.com/egee-irl/gsc-rust/wiki/bans.cfg">ban.cfg</a> - If there's some asshat you never want joining your server, set them in this file so the ban is active as soon as the server starts.
 
 <a href="https://github.com/egee-irl/gsc-rust/wiki/server.log">server.log</a> - Not a config file but an equally important file that stores all the server activity.
+
+### Updating The Server
+
+Rust follows a pretty regular update & wipe schedule. A minor update occurs every Thursday, and a major update & map wipe happens every _first_ Thursday of the month. All updates require rebooting of the server, and the wipe update will restart all map data and sometimes player data (blueprints, etc).
+
+Updating the server is super easy: ``docker-compose exec rust-server update``. Always make sure you are in the repo directory when issuing Docker-Compose commands.
