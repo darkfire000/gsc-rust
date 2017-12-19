@@ -9,11 +9,11 @@ Host your very own dedicated Rust server with one command:
 
 ``docker-compose up``
 
-That's it! This single command will create your very own Rust game server! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
+That's it! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
 
-Note - this readme assumes you've already installed the prerequisites for Game Server Containers. If you want to learn more and see what it takes to get started running your own Game Server Container, check out the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo.
+**Note** - this readme assumes you've already installed the prerequisites for Game Server Containers. If you want to learn more and see what it takes to get started running your own Game Server Container, check out the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo.
 
-### Getting Started
+### Starting The Server
 
 Rust is one of the easiest games to serve in a container because all of the launch parameters are passed to the server at runtime. Additional configuration keys are passed via the ``server.cfg`` file in the ``cfg`` directory.
 
@@ -22,4 +22,7 @@ Hosting your own dedicated server is ridiculously easy:
 1. Clone this repo
 2. Run ``docker-compose up`` from a terminal in the repo directory
 
-Docker should start downloading the base ``rustserver`` image and then begin building the container. Once the container is built, it will automatically run. If you don't want the server attached to your terminal window, you can safely kill the process (ctl-c), and restart it detached from your terminal: ``docker-compose up -d``.
+Docker should start downloading the base ``rustserver`` image and then begin building the container. Once the container is built, it will automatically run. If you don't want the server attached to your terminal window, you can safely kill the process (ctrl-c), and restart it detached from your terminal: ``docker-compose up -d``. If the server is detached from your terminal, you can <a href="https://github.com/egee-irl/gsc-docs#viewing-logs">view the logs</a> the same as any Game Server Container.
+
+### Configuring The Server
+
