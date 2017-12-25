@@ -1,7 +1,10 @@
 version: "2.3"
 services:
   rust-server:
-    cpus: 0.8
+    volumes:
+      # https://github.com/docker/compose/issues/3270
+      - ~/volumes/rust-server/:/opt/rustserver/server/rust:Z
+    cpuset: 0-1
     mem_reservation: 2048m
     build:
       context: .
