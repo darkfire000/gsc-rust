@@ -45,3 +45,10 @@ Updating the server is super easy:
 ``docker-compose exec rust-server update``
 
 Always make sure you are in the repo directory when issuing Docker-Compose commands.
+
+### Considerations
+
+Because Game Server Containers are designed to be as close to zero-configuration as possible, configuration was sacrificed for convention and stability. This _shouldn't_ mean anything to the end user, however if you are interested in poking around at the Dockerfile and other configuration bits, there are things to be aware of.
+
+#### Hardcoded Configuration
+The ``SERVER_ID`` is hardcoded in the Dockerfile. This value is used by the server to locate the directory where the Rust data files are kept and if it changes, things break. On the flipside if you *must* change it for whatever reason, simply change the _value_ of SERVER_ID in the Dockerfile itself everything should work fine.
