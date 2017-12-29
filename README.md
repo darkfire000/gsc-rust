@@ -36,6 +36,8 @@ There are 3 config files you may want to change before making your game server p
 
 <a href="https://github.com/egee-irl/gsc-rust/wiki/server.log">server.log</a> - Not a config file but an equally important file that stores all the server activity.
 
+If you want to change the server's configuration after you've launched it, you can find the config files in the ``cfg`` directory located where your volumes are mounted. See the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo for more information about volumes.
+
 ### Updating The Server
 
 Rust follows a pretty regular update & wipe schedule. A minor update occurs every Thursday, and a major update & map wipe happens every _first_ Thursday of the month. All updates require rebooting of the server, and the wipe update will restart all map data and sometimes player data (blueprints, etc).
@@ -46,6 +48,18 @@ Updating the server is super easy:
 
 Always make sure you are in the repo directory when issuing Docker-Compose commands.
 
+### Server Data Location
+Like other gsc servers, the Rust server mounts the server data folder as a volume on your local hard drive. By default, your server files (player data, server data, cfg files, etc) should be located in your _home_ directory in a folder called ``volumes`` & under a sub folder called ``rust-server``. Example:
+
+Windows: ``c:/users/egee/volumes/rust-server``
+Linux: ``/home/egee/volumes/rust-server``
+
 ### Considerations
 
-Because Game Server Containers are designed to be as close to zero-configuration as possible, configuration was sacrificed for convention and stability. This _shouldn't_ mean anything to the end user, however if you are interested in poking around at the Dockerfile and other configuration bits, there are things to be aware of.
+Because Game Server Containers are designed to be as close to zero-configuration as possible, configuration was sacrificed for convention and stability. This _shouldn't_ mean anything to the end user, however if you are interested in poking around at the Dockerfile and other configuration bits, there are things to be aware of:
+
+#### Server Configuration
+The default server configuration is not designed for a public server. And while you _can_ host a public server with the default values (for testing your network settings or something), you will want to change them. Check the <a href="https://github.com/egee-irl/gsc-rust/wiki">wiki</a> for more information.
+
+#### Back Ups
+GSC simply launches your game server in a convinient container; it does <u>not</u> manage it for you. General server admin-y things such as rotating log files and backing up server data is your responsiblity.
