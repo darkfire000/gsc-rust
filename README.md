@@ -62,4 +62,4 @@ Because Game Server Containers are designed to be as close to zero-configuration
 The default server configuration is not designed for a public server. And while you _can_ host a public server with the default values (for testing your network settings or something), you will want to change them. Check the <a href="https://github.com/egee-irl/gsc-rust/wiki">wiki</a> for more information.
 
 #### Back Ups
-GSC simply launches your game server in a convinient container; it does <u>not</u> manage it for you. General server admin-y things such as rotating log files and backing up server data is your responsiblity.
+GSC simply launches your game server in a convinient container; it does **not** manage it for you. General server admin-y things such as rotating log files and backing up server data is your responsiblity.
