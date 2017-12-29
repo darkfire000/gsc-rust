@@ -11,4 +11,5 @@ COPY cfg/users.cfg /opt/rustserver/server/${SERVER_ID}/cfg/users.cfg
 WORKDIR /opt/rustserver
 ENV LD_LIBRARY_PATH=/opt/rustserver:/opt/rustserver/RustDedicated_Data:{$LD_LIBRARY_PATH}
 ENV update=/update
+RUN update
 CMD ["run"]
