@@ -52,6 +52,7 @@ Always make sure you are in the repo directory when issuing Docker-Compose comma
 Like other gsc servers, the Rust server mounts the server data folder as a volume on your local hard drive. By default, your server files (player data, server data, cfg files, etc) should be located in your _home_ directory in a folder called ``volumes`` & under a sub folder called ``rust-server``. Example:
 
 Windows: ``c:/users/egee/volumes/rust-server``
+
 Linux: ``/home/egee/volumes/rust-server``
 
 ### Considerations
