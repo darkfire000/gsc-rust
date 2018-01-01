@@ -1,7 +1,9 @@
 version: "2.3"
 services:
   rust-server:
-    cpus: 0.8
+    volumes:
+      - ~/volumes/rust-server/:/opt/rustserver/server/rust:Z
+    cpuset: 0-1
     mem_reservation: 2048m
     build:
       context: .
