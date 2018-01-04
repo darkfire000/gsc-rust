@@ -2,7 +2,7 @@ version: "2.3"
 services:
   rust-server:
     volumes:
-      - ~/volumes/rust-server/:/opt/rustserver/server/rust:Z
+      - ~/volumes/rust-server/:/opt/rustserver/server/rust
     cpuset: 0-1
     mem_reservation: 2048m
     build:
