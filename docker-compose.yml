@@ -3,7 +3,7 @@ services:
   rust-server:
     volumes:
       - ~/volumes/rust-server/:/opt/rustserver/server/rust
-    cpuset: '0'
+    cpuset: '3'
     mem_reservation: 2048m
     build:
       context: .
