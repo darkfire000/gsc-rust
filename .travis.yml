@@ -5,6 +5,6 @@ script:
   - docker build . -t egeeio/rustserver
 after_success:
   - if [ "$TRAVIS_BRANCH" == "bootstrap" ]; then
-  docker login -u $username -p $password
+  docker login -u $username -p $password;
   docker push egeeio/rustserver;
   fi
