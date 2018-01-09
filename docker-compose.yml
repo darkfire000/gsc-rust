@@ -2,9 +2,14 @@ version: "2.3"
 services:
   rust-server:
     volumes:
-      - ~/volumes/rust-server/:/opt/rustserver/server/rust
-    cpuset: '3'
-    mem_reservation: 2048m
+      - type: bind
+        source: ./rust/
+        target: /opt/rustserver/server/rust
+      - type: bind
+        source: ./rust/server.log
+        target: /opt/rustserver/server.log
+    # cpuset: ''
+    # mem_reservation: 2048m
     build:
       context: .
     env_file:
@@ -12,3 +17,7 @@ services:
     ports:
     - "28015:28015/udp"
     - "28016:28016"
+networks:
+  default:
+    external:
+      name: egeeio_network
