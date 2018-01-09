@@ -1,0 +1,677 @@
+Found path: /opt/rustserver/RustDedicated
+Mono path[0] = '/opt/rustserver/RustDedicated_Data/Managed'
+Mono config path = '/opt/rustserver/RustDedicated_Data/Mono/etc'
+Preloaded 'libRakNet.so'
+Preloaded 'libRustNative.so'
+Preloaded 'libeac_server.so'
+Preloaded 'libeasyanticheat.so'
+Preloaded 'libsteam_api64.so'
+Preloaded 'steamclient.so'
+Unable to preload the following plugins:
+	libRenderer.so
+Player data archive not found at `/opt/rustserver/RustDedicated_Data/data.unity3d`, using local filesystem
+PlayerPrefs - Creating folder: /root/.config/unity3d/Facepunch Studios LTD
+PlayerPrefs - Creating folder: /root/.config/unity3d/Facepunch Studios LTD/Rust
+Initialize engine version: 2017.1.2f1 (cc85bf6a8a04)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+AudioManager: Using Unknown: NoSound Driver
+Begin MonoManager ReloadAssembly
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Assembly-CSharp.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.UI.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.Networking.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.Timeline.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.Analytics.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/ConvexHull.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/ConvexHull.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/I18N.CJK.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/I18N.CJK.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/I18N.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/I18N.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/I18N.MidEast.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/I18N.MidEast.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/I18N.Other.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/I18N.Other.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/I18N.Rare.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/I18N.Rare.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/I18N.West.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/I18N.West.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Ionic.Zip.Reduced.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/LZ4.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/LZ4.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/EasyAntiCheat.Client.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/EasyAntiCheat.Client.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/EasyAntiCheat.Server.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/EasyAntiCheat.Server.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Console.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Console.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Input.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Input.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Network.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Network.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Raknet.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Raknet.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Rcon.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Rcon.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.System.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.System.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.UnityEngine.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.UnityEngine.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Rust.Data.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Rust.Data.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Rust.Global.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Rust.Global.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Rust.UI.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Rust.UI.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Rust.Workshop.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Rust.Workshop.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/websocket-sharp.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/websocket-sharp.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Steamworks.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Steamworks.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Unity.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Facepunch.Unity.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Newtonsoft.Json.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/Newtonsoft.Json.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/ApexAI.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/ApexAI.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/ApexSerialization.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/ApexSerialization.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/ApexShared.dll (this message is harmless)
+Loading /opt/rustserver/RustDedicated_Data/Managed/ApexShared.dll into Unity Child Domain
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Core.dll (this message is harmless)
+- Completed reload, in  0.029 seconds
+Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+Shader 'Hidden/TerrainEngine/Splatmap/Specular-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+Shader 'Hidden/TerrainEngine/Splatmap/Standard-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - Setting to default shader.
+UnloadTime: 1.032000 ms
+Bootstrap Startup
+System
+	Name: 24258f423486
+	OS:   Linux 4.4 unknown 64bit
+
+CPU
+	Model:  Intel(R) Pentium(R) CPU G3260T @ 2.90GHz
+	Cores:  2
+	Memory: 7889 MB
+
+GPU
+	Model:  Null Device
+	API:    NULL 1.0 [1.0]
+	Memory: 128 MB
+	SM:     30
+
+Process
+	Priority: 0
+	Threads:  0
+	Memory:   123 MB
+	Peak:     139 MB
+
+Mono
+	Collects: 11
+	Memory:   0 MB
+
+
+
+Manifest Metadata Loaded
+	10207 pooled strings
+	13 mesh colliders
+	4704 prefab properties
+	381 effect categories
+	446 entity names
+	86 skinnable names
+Command Line: "/opt/rustserver/RustDedicated" "+server.ip" ""0.0.0.0"" "+server.port" ""28015"" "+server.tickrate" ""20"" "+server.identity" ""rust"" "+server.saveinterval" ""300"" "+rcon.web" ""1"" "+rcon.ip" ""0.0.0.0"" "+rcon.port" ""28016"" "+rcon.password" ""******"" "-logfile" "server.log" 
+server.ip: "0.0.0.0"
+server.port: "28015"
+server.tickrate: "20"
+server.identity: "rust"
+server.saveinterval: "300"
+rcon.web: "True"
+rcon.ip: "0.0.0.0"
+rcon.port: "28016"
+Command 'rcon.password' not found
+Command 'logfile' not found
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Configuration.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Xml.dll (this message is harmless)
+[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Runtime.Serialization.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Xml.Linq.dll (this message is harmless)
+server.ip: "0.0.0.0"
+server.port: "28015"
+server.tickrate: "20"
+server.identity: "rust"
+server.saveinterval: "300"
+rcon.web: "True"
+rcon.ip: "0.0.0.0"
+rcon.port: "28016"
+Command 'rcon.password' not found
+Command 'logfile' not found
+Server Config Loaded
+Running server/rust/cfg/bans.cfg
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Running server/rust/cfg/users.cfg
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Manifest Assets Loaded
+	86 skinnable objects
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+Unloading 5 Unused Serialized files (Serialized files now loaded: 63)
+UnloadTime: 648.047000 ms
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Mono.Security.dll (this message is harmless)
+Generating terrain of size 3500 with seed 1
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Floating point textures aren't supported on this device (Main Camera (UnityStandardAssets.CinematicEffects.TonemappingColorGrading))
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Couldn't open /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so, error: /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so: undefined symbol: glXGetProcAddressARB
+ 
+(Filename:  Line: 203)
+
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer
+[AmplifyOcclusion] Null graphics device detected. Skipping effect silently.
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1249 unused Assets to reduce memory usage. Loaded Objects now: 26106.
+Total: 163.521000 ms (FindLiveObjects: 1.299000 ms CreateObjectMapping: 1.519000 ms MarkObjects: 152.081000 ms  DeleteObjects: 8.622000 ms)
+
+Couldn't open /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so, error: /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so: undefined symbol: glXGetProcAddressARB
+ 
+(Filename:  Line: 203)
+
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer
+WebSocket RCon Started on 28016
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[1.0s] Loading World
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way (Specular setup)' - All passes removed
+[20.2s] Spawning World
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[0.7s] Terrain Mesh
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[2.0s] Wire Meshes
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[2.9s] Procedural Generation
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Starting Navmesh Source Collecting.
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Calling CollectSourcesAsync took 36.32371
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Starting Navmesh Build with 41621 sources
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+8%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+10%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+11%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+12%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+13%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+14%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+16%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+17%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+18%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+19%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+20%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+21%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+22%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+23%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+24%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+25%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+26%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+27%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+28%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+29%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+30%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+31%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+32%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+33%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+34%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+35%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+36%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+37%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+38%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+39%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+40%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+41%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+42%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+43%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+44%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+45%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+46%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+47%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+48%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+49%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+50%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+51%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+52%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+53%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+54%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+55%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+56%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+57%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+58%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+59%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+60%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+61%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+62%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+63%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+64%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+65%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+66%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+67%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+68%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+69%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+70%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+71%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+72%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+73%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+74%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+75%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+76%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+77%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+78%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+79%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+80%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+81%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+82%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+83%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+84%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+85%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+86%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+87%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+88%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+89%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+90%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+91%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+93%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Navmesh Build took 110.62 seconds
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Map Spawned 348 entities
+Couldn't load server/rust/proceduralmap.3500.1.155.sav - file doesn't exist
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Missing EnvSync - creating
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Missing CommunityEntity - creating
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Missing ResourceDepositManager - creating
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing 22636 entity links
+	done.
+Initializing 263 stability supports
+	done.
+Initializing 17018 entity save caches
+	done.
+Facepunch.Steamworks Unity: LinuxPlayer
+Facepunch.Steamworks Os: Linux
+Facepunch.Steamworks Arch: x64
+Connected to Steam
+Server startup complete
+BradleyAPC Spawned at :(306.3, 17.0, 444.2)
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
