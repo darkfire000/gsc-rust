@@ -8,3 +8,4 @@ after_success:
     docker login -u $username -p $password;
     docker push egeeio/rustserver;
     fi
+  - echo "Image Update & Upload Complete"
