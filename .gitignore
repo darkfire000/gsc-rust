@@ -4,3 +4,4 @@
 *.db
 rust/storage/*
 rust/user*
+server.log
