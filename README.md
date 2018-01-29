@@ -1,7 +1,7 @@
 # gsc-rust - Game Server Container for Rust
 <a href="www.egee.io"><img src="https://i.imgur.com/Mvjrkqo.png" alt="Rust on Docker" width="300" /></a>
 
-[![Build Status](https://travis-ci.org/egee-irl/gsc-rust.svg?branch=unstable)](https://travis-ci.org/egee-irl/gsc-rust)
+[![Build Status](https://travis-ci.org/egee-irl/gsc-rust.svg?branch=stable)](https://travis-ci.org/egee-irl/gsc-rust)
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat)](https://discord.gg/42PMX5N)
 [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/gsc-rust/blob/stable/LICENSE)
 
@@ -15,18 +15,20 @@ That's it! And its fully cross-platform; run it on Linux *or* Windows. That's th
 
 ### Starting The Server
 
-Rust is one of the easiest games to serve in a container because *all* of the launch parameters are passed to the server at runtime. Additional configuration keys are passed via the ``server.cfg`` file in the ``cfg`` directory.
+Rust is one of the easiest games to serve in a container. Launch parameters are defined in the ``vars.env`` file, and additional server configuration settings can be found inthe ``server.cfg`` file in the ``rust/cfg`` directory in this repo.
 
 Hosting your own dedicated server is ridiculously easy:
 
 1. Clone this repo
 2. Run ``docker-compose up`` from a terminal in the repo directory
 
-Docker should start downloading the base ``rustserver`` image and then begin building the container. Once the container is built, it will automatically run. If you don't want the server attached to your terminal window, you can safely kill the process (ctrl-c), and restart it detached from your terminal: ``docker-compose up -d``. If the server is detached from your terminal, you can <a href="https://github.com/egee-irl/gsc-docs#viewing-logs">view the logs</a> the same as any Game Server Container.
+Docker should begin downloading the base ``rustserver`` image and then begin building the container. Once the container is built, it will automatically run and launch your server. If you don't want the server attached to your terminal window, you can safely kill the process (ctrl-c), and restart it detached from your terminal: ``docker-compose up -d``. If the server is detached from your terminal, you can use the ``docker-compose logs`` command, or view the log directly (located at ``rust/server.log``).
 
 ### Configuring The Server
 
 There are 3 config files you may want to change before making your game server public. The config files are:
+
+<a href="https://github.com/egee-irl/gsc-rust/wiki/vars.env">vars.env</a> - This file defines the launch parameters for the Rust server.
 
 <a href="https://github.com/egee-irl/gsc-rust/wiki/server.cfg">server.cfg</a> - This is the main config file for the whole server. Almost much everything you'll want to do to set the server up will be found here.
 
@@ -46,14 +48,10 @@ Updating the server is super easy:
 
 ``docker-compose exec rust-server update``
 
-Always make sure you are in the repo directory when issuing Docker-Compose commands.
+<u>Always</u> make sure you are in the repo directory when issuing Docker-Compose commands.
 
 ### Server Data Location
-Like other gsc servers, the Rust server mounts the server data folder as a volume on your local hard drive. By default, your server files (player data, server data, cfg files, etc) should be located in your _home_ directory in a folder called ``volumes`` & under a sub folder called ``rust-server``. Example:
-
-Windows: ``c:/users/egee/volumes/rust-server``
-
-Linux: ``/home/egee/volumes/rust-server``
+The Rust server container mounts the server data folder as a volume under a folder titled ``rust`` in the root of this repository. All files related to server configuration can be found there and are safe to edit.
 
 ### Considerations
 
@@ -63,7 +61,10 @@ Because Game Server Containers are designed to be as close to zero-configuration
 The default server configuration is not designed for a public server. And while you _can_ host a public server with the default values (for testing your network settings or something), you will want to change them. Check the <a href="https://github.com/egee-irl/gsc-rust/wiki">wiki</a> for more information.
 
 #### Back Ups
-GSC simply launches your game server in a convinient container; it does **not** manage it for you. General server admin-y things such as rotating log files and backing up server data is your responsiblity. See tthe <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo for more information about what GSC does and does not do.
+GSC simply launches your game server in a convenient container; it does **not** manage it for you. General server admin-y things such as rotating log files and backing up server data is your responsiblity. See tthe <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo for more information about what GSC does and does not do.
 
 #### Resource Allocation
-By default, the Rust server will use 2 cores and 2gb of ram. These values are static and set in the ``docker-compose.yml`` file. If you want your server to use more ram or more cores, adjust them there. There's a section in the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo about this.
+By default, the Rust server will use 2 cores and 3gb of ram. These values are static and set in the ``docker-compose.yml`` file. If you want your server to use more ram or more cores, adjust them there. There's a section in the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo about this.
+
+#### Help and Examples
+If you are stuck and or can't figure out how to setup your own Rust server, checkout the <a href="https://github.com/egee-irl/gsc-rust/tree/egeeio">egeeio branch</a> in this repo. The egee.io community hosts our own Rust server and all the server configuration is checked into that branch and you are free to use it as a template.

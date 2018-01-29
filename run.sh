@@ -12,4 +12,3 @@ touch /opt/rustserver/server.log
   +rcon.password ${RCONPASSWORD} \
   -logfile server.log &
 tail -f /opt/rustserver/server.log
-
