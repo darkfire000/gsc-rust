@@ -15,4 +15,4 @@ ENV run=/run
 RUN chmod +x /usr/bin/run
 RUN chmod +x /usr/bin/update
 RUN update
-CMD ["run"]
+CMD ["/usr/bin/run"]
