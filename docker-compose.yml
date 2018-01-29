@@ -8,7 +8,7 @@ services:
       - type: bind
         source: ./rust/server.log
         target: /opt/rustserver/server.log
-#    cpuset: 2-3
+    # cpuset: 0-1
     mem_reservation: 3000m
     build:
       context: .
