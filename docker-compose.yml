@@ -4,7 +4,7 @@ services:
     volumes:
       - type: bind
         source: ./rust/
-          target: /opt/rustserver/server/rust
+        target: /opt/rustserver/server/rust
       - type: bind
         source: ./rust/server.log
         target: /opt/rustserver/server.log
