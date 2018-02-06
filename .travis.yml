@@ -3,6 +3,7 @@ services:
   - docker
 before_script:
   - docker pull redcoolbeans/dockerlint
+  - docker-compose -v
 script:
   - docker run -it --rm -v "$TRAVIS_BUILD_DIR/Dockerfile":/Dockerfile:ro redcoolbeans/dockerlint
   - docker-compose config
