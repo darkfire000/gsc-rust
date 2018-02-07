@@ -5,53 +5,51 @@
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat)](https://discord.gg/42PMX5N)
 [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/gsc-rust/blob/stable/LICENSE)
 
-Host your very own dedicated Rust server with one command:
+Host your very own dedicated Rust server with <u>one</u> command:
 
 ``docker-compose up``
 
-That's it! And its fully cross-platform; run it on Linux *or* Windows. That's the power of Game Server Containers!
+That's it! That's the power of Game Server Containers! 🐋
 
 **Note** - this readme assumes you've already installed the prerequisites & your system meets the requirements to run a Game Server Container. If you want to learn more and see what it takes to run your own Game Server Container, check out the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo.
 
 ### Starting The Server
 
-Rust is one of the easiest games to serve in a container. Launch parameters are defined in the ``vars.env`` file, and additional server configuration settings can be found inthe ``server.cfg`` file in the ``rust/cfg`` directory in this repo.
+Rust is one of the easiest games to serve in a container. Launch parameters are defined in the ``vars.env`` file, and additional server configuration settings can be found in the ``server.cfg`` file in the ``rust/cfg`` directory in this repo.
 
 Hosting your own dedicated server is ridiculously easy:
 
-1. Clone this repo
+1. Clone (or download) this repo
 2. Run ``docker-compose up`` from a terminal in the repo directory
 
 Docker should begin downloading the base ``rustserver`` image and then begin building the container. Once the container is built, it will automatically run and launch your server. If you don't want the server attached to your terminal window, you can safely kill the process (ctrl-c), and restart it detached from your terminal: ``docker-compose up -d``. If the server is detached from your terminal, you can use the ``docker-compose logs`` command, or view the log directly (located at ``rust/server.log``).
 
 ### Configuring The Server
 
-There are 3 config files you may want to change before making your game server public. The config files are:
+There are 5 files you should be aware of before taking your server public:
 
 <a href="https://github.com/egee-irl/gsc-rust/wiki/vars.env">vars.env</a> - This file defines the launch parameters for the Rust server.
 
-<a href="https://github.com/egee-irl/gsc-rust/wiki/server.cfg">server.cfg</a> - This is the main config file for the whole server. Almost much everything you'll want to do to set the server up will be found here.
+<a href="https://github.com/egee-irl/gsc-rust/wiki/server.cfg">server.cfg</a> - This is the main config file for the whole server. Almost everything to customize your server can be found here.
 
-<a href="https://github.com/egee-irl/gsc-rust/wiki/users.cfg">users.cfg</a> - If you have folks you want to be persistent admins of your server, set them in this file so that they are active admins when the server starts up.
+<a href="https://github.com/egee-irl/gsc-rust/wiki/users.cfg">users.cfg</a> - Set your admins here.
 
-<a href="https://github.com/egee-irl/gsc-rust/wiki/bans.cfg">ban.cfg</a> - If there's some asshat you never want joining your server, set them in this file so the ban is active as soon as the server starts.
+<a href="https://github.com/egee-irl/gsc-rust/wiki/bans.cfg">ban.cfg</a> - Set your bans here.
 
-<a href="https://github.com/egee-irl/gsc-rust/wiki/server.log">server.log</a> - Not a config file but an equally important file that stores all the server activity.
+<a href="https://github.com/egee-irl/gsc-rust/wiki/server.log">server.log</a> - Not a config file but an equally important file that stores (almost) all the server activity.
 
 If you want to change the server's configuration after you've launched it, you can find the config files in the ``cfg`` directory located where your volumes are mounted. See the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo for more information about volumes.
 
 ### Updating The Server
 
-Rust follows a pretty regular update & wipe schedule. A minor update occurs every Thursday, and a major update & map wipe happens every _first_ Thursday of the month. All updates require rebooting of the server, and the wipe update will restart all map data and sometimes player data (blueprints, etc).
-
-Updating the server is super easy:
+All Rust server updates require rebooting of the server, and the server does not update nor reboot automatically. Luckilly, updating the server is super easy. From the repo directory, issue this command:
 
 ``docker-compose exec rust-server update``
 
-<u>Always</u> make sure you are in the repo directory when issuing Docker-Compose commands.
+<u>Always</u> make sure you are in the repo directory when issuing ``docker-compose`` commands.
 
 ### Server Data Location
-The Rust server container mounts the server data folder as a volume under a folder titled ``rust`` in the root of this repository. All files related to server configuration can be found there and are safe to edit.
+The Rust server container mounts the server data folder as a Docker _bind_ volume under a folder called ``rust`` in the root of this repository. All files related to server configuration can be found there and are safe to edit. Keep in mind that any edits to files will not take effect until the server is rebooted.
 
 ### Considerations
 
