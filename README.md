@@ -58,7 +58,7 @@ The Rust server container mounts the server data folder as a Docker _bind_ volum
 Because Game Server Containers are designed to be as close to zero-configuration as possible, configuration was sacrificed for convention and stability. This _shouldn't_ mean anything to the end user, however if you are interested in poking around at the Dockerfile and other configuration bits, there are things to be aware of:
 
 ##### Oxide & Mods
-Setting up Oxide and supporting modded servers is _technically_ simple, however the work required has not started. If you are interested in Oxide support, let me know by commenting on the open issue on this repo, or fork the repo and submit a PR with the required changes 👍.
+Setting up Oxide and supporting modded servers is _technically_ simple, however the work required to implement it has not started. If you are interested in Oxide support, let me know or fork the repo and submit a PR with the required changes 👍.
 
 ##### Server Configuration
 The default server configuration is not designed for a public server. And while you _can_ host a public server with the default values (for testing your network settings or something), you will want to change them. Check the <a href="https://github.com/egee-irl/gsc-rust/wiki">wiki</a> for more information.
