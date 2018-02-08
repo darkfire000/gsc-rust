@@ -57,14 +57,17 @@ The Rust server container mounts the server data folder as a Docker _bind_ volum
 
 Because Game Server Containers are designed to be as close to zero-configuration as possible, configuration was sacrificed for convention and stability. This _shouldn't_ mean anything to the end user, however if you are interested in poking around at the Dockerfile and other configuration bits, there are things to be aware of:
 
-#### Server Configuration
+##### Oxide & Mods
+Setting up Oxide and supporting modded servers is _technically_ simple, however the work required has not started. If you are interested in Oxide support, let me know by commenting on the open issue on this repo, or fork the repo and submit a PR with the required changes 👍.
+
+##### Server Configuration
 The default server configuration is not designed for a public server. And while you _can_ host a public server with the default values (for testing your network settings or something), you will want to change them. Check the <a href="https://github.com/egee-irl/gsc-rust/wiki">wiki</a> for more information.
 
-#### Back Ups
+##### Back Ups
 GSC simply launches your game server in a convenient container; it does **not** manage it for you. General server admin-y things such as rotating log files and backing up server data is your responsiblity. See tthe <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo for more information about what GSC does and does not do.
 
-#### Resource Allocation
+##### Resource Allocation
 By default, the Rust server will use 2 cores and 3gb of ram. These values are static and set in the ``docker-compose.yml`` file. If you want your server to use more ram or more cores, adjust them there. There's a section in the <a href="https://github.com/egee-irl/gsc-docs">gsc-docs</a> repo about this.
 
-#### Help and Examples
+##### Help and Examples
 If you are stuck and or can't figure out how to setup your own Rust server, checkout the <a href="https://github.com/egee-irl/gsc-rust/tree/egeeio">egeeio branch</a> in this repo. The egee.io community hosts our own Rust server and all the server configuration is checked into that branch and you are free to use it as a template.
