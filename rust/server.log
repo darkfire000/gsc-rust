@@ -9,8 +9,10 @@ Preloaded 'libsteam_api64.so'
 Preloaded 'steamclient.so'
 Unable to preload the following plugins:
 	libRenderer.so
+	libRustNative.so
+	libRenderer.so
 Player data archive not found at `/opt/rustserver/RustDedicated_Data/data.unity3d`, using local filesystem
-Initialize engine version: 2017.1.2f1 (cc85bf6a8a04)
+Initialize engine version: 2017.1.3f1 (574eeb502d14)
 Forcing GfxDevice: Null
 NullGfxDevice:
     Version:  NULL 1.0 [1.0]
@@ -96,7 +98,8 @@ Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/ApexShared.dll (th
 Loading /opt/rustserver/RustDedicated_Data/Managed/ApexShared.dll into Unity Child Domain
 Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.dll (this message is harmless)
 Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Core.dll (this message is harmless)
-- Completed reload, in  0.752 seconds
+- Completed reload, in  0.030 seconds
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Oxide.Core.dll (this message is harmless)
 Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
 Shader 'Hidden/TerrainEngine/Splatmap/Specular-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
 Shader 'Hidden/TerrainEngine/Splatmap/Standard-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
@@ -114,16 +117,16 @@ WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All
 WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
 WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
 WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - Setting to default shader.
-UnloadTime: 2.608000 ms
+UnloadTime: 1.017000 ms
 Bootstrap Startup
 System
-	Name: 5a0e5a7e2eb6
-	OS:   Linux 4.11 unknown 64bit
+	Name: 7ff010db5b3b
+	OS:   Linux 4.4 unknown 64bit
 
 CPU
-	Model:  AMD A8-7600 Radeon R7, 10 Compute Cores 4C+6G
-	Cores:  4
-	Memory: 6910 MB
+	Model:  Intel(R) Pentium(R) CPU G3260T @ 2.90GHz
+	Cores:  2
+	Memory: 7889 MB
 
 GPU
 	Model:  Null Device
@@ -134,8 +137,8 @@ GPU
 Process
 	Priority: 0
 	Threads:  0
-	Memory:   113 MB
-	Peak:     130 MB
+	Memory:   125 MB
+	Peak:     144 MB
 
 Mono
 	Collects: 11
@@ -144,41 +147,49 @@ Mono
 
 
 Manifest Metadata Loaded
-	10339 pooled strings
+	11118 pooled strings
 	13 mesh colliders
-	4732 prefab properties
-	381 effect categories
-	447 entity names
+	4959 prefab properties
+	388 effect categories
+	518 entity names
 	86 skinnable names
-Command Line: "/opt/rustserver/RustDedicated" "+server.ip" ""0.0.0.0"" "+server.port" ""28015"" "+server.tickrate" ""20"" "+server.identity" ""rust"" "+server.saveinterval" ""300"" "+rcon.web" ""1"" "+rcon.ip" ""0.0.0.0"" "+rcon.port" ""28016"" "+rcon.password" ""******"" "-logfile" "server.log" 
-server.ip: "0.0.0.0"
-server.port: "28015"
-server.tickrate: "20"
-server.identity: "rust"
-server.saveinterval: "300"
-rcon.web: "True"
-rcon.ip: "0.0.0.0"
-rcon.port: "28016"
-Command 'rcon.password' not found
-Command 'logfile' not found
-Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Configuration.dll (this message is harmless)
+Command Line: "/opt/rustserver/RustDedicated" "+server.ip" ""0.0.0.0"" "+server.port" ""28025"" "+server.tickrate" ""20"" "+server.identity" ""rust"" "+server.saveinterval" ""300"" "+rcon.web" ""1"" "+rcon.ip" ""0.0.0.0"" "+rcon.port" ""28026"" "+rcon.password" ""******"" "-logfile" "server.log" 
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Oxide.References.dll (this message is harmless)
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/kernel32
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libkernel32.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./kernel32
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libkernel32.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/kernel32
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libkernel32
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libkernel32.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libkernel32
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libkernel32.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libkernel32
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Runtime.Serialization.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Xml.Linq.dll (this message is harmless)
 Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Xml.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Data.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Configuration.dll (this message is harmless)
+Non platform assembly: data-0xc5f4b00 (this message is harmless)
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/data-0xc5f4b00.so
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Mono.Security.dll (this message is harmless)
+Non platform assembly: data-0xc6b4920 (this message is harmless)
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/data-0xc6b4920.so
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/MySql.Data.dll (this message is harmless)
+Non platform assembly: data-0xc6f9920 (this message is harmless)
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/data-0xc6f9920.so
+Non platform assembly: data-0xc71e990 (this message is harmless)
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/data-0xc71e990.so
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Data.SQLite.dll (this message is harmless)
+Non platform assembly: data-0xc738880 (this message is harmless)
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/data-0xc738880.so
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Transactions.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Configuration.Install.dll (this message is harmless)
+Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Mono.Data.Tds.dll (this message is harmless)
 [Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Runtime.Serialization.dll (this message is harmless)
-Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/System.Xml.Linq.dll (this message is harmless)
-server.ip: "0.0.0.0"
-server.port: "28015"
-server.tickrate: "20"
-server.identity: "rust"
-server.saveinterval: "300"
-rcon.web: "True"
-rcon.ip: "0.0.0.0"
-rcon.port: "28016"
-Command 'rcon.password' not found
-Command 'logfile' not found
 Server Config Loaded
 Running server/rust/cfg/bans.cfg
  
@@ -188,17 +199,9 @@ Running server/rust/cfg/users.cfg
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Loading Items Took: 9.7256966 seconds
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Building Items Took: 9.7699649 seconds / Items: 375 / Blueprints: 243
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 Manifest Assets Loaded
 	86 skinnable objects
-Unloading 5 Unused Serialized files (Serialized files now loaded: 63)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 64)
 WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
@@ -207,9 +210,12 @@ WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
-UnloadTime: 12.857000 ms
-Platform assembly: /opt/rustserver/RustDedicated_Data/Managed/Mono.Security.dll (this message is harmless)
-Generating terrain of size 3500 with seed 1
+UnloadTime: 7.105000 ms
+Generating terrain of size 2800 with seed 6969
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[CustomProbe] Initialization failed. No cubemap ortho basis defined for Null
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -236,8 +242,8 @@ Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
-Unloading 1249 unused Assets to reduce memory usage. Loaded Objects now: 24682.
-Total: 229.352000 ms (FindLiveObjects: 2.767000 ms CreateObjectMapping: 3.246000 ms MarkObjects: 213.235000 ms  DeleteObjects: 10.104000 ms)
+Unloading 7842 unused Assets to reduce memory usage. Loaded Objects now: 29063.
+Total: 146.984000 ms (FindLiveObjects: 1.699000 ms CreateObjectMapping: 2.434000 ms MarkObjects: 129.635000 ms  DeleteObjects: 13.215000 ms)
 
 Couldn't open /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so, error: /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so: undefined symbol: glXGetProcAddressARB
  
@@ -253,49 +259,110 @@ Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/
 Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer
 Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/./libRenderer.so
 Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/x86_64/libRenderer
-WebSocket RCon Started on 28016
+Loading Oxide Core v2.0.3814...
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[1.2s] Loading World
+Loading extensions...
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Latest compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Local compiler MD5: 8ce6d27e7718e3d164766bba8833537a
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded extension CSharp v2.0.3846 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded extension MySql v2.0.3755 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded extension Rust v2.0.3904 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded extension SQLite v2.0.3754 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded extension Unity v2.0.3756 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Using Covalence provider for game 'Rust'
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loading plugins...
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded plugin Rust v2.0.3904 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loaded plugin Unity v2.0.3756 by Oxide and Contributors
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Asset Warmup (1/2740)
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+Asset Warmup (192/2740)
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+Asset Warmup (252/2740)
+Asset Warmup (470/2740)
+Asset Warmup (498/2740)
+Asset Warmup (523/2740)
+Asset Warmup (892/2740)
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+Asset Warmup (1326/2740)
+Asset Warmup (1630/2740)
+Asset Warmup (1859/2740)
+Asset Warmup (2035/2740)
+Asset Warmup (2506/2740)
+Asset Warmup (2740/2740)
+WebSocket RCon Started on 28026
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[0.6s] Loading World
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Packed/Rust/Standard Terrain Blend (Specular setup)' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
 WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way (Specular setup)' - All passes removed
-WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way (Specular setup)' - All passes removed
-[44.5s] Spawning World
+[2.6s] Spawning World
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[1.0s] Terrain Mesh
+[0.6s] Terrain Mesh
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[2.6s] Wire Meshes
+[1.0s] Wire Meshes
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[3.7s] Procedural Generation
+[1.8s] Procedural Generation
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -303,15 +370,19 @@ Starting Navmesh Source Collecting.
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Calling CollectSourcesAsync took 14.574
+Calling CollectSourcesAsync took 7.210226
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Starting Navmesh Build with 35840 sources
+Starting Navmesh Build with 19156 sources
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-8%
+7%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+10%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -324,6 +395,10 @@ Starting Navmesh Build with 35840 sources
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 13%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+14%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -411,10 +486,6 @@ Starting Navmesh Build with 35840 sources
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-36%
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 37%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -432,10 +503,6 @@ Starting Navmesh Build with 35840 sources
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 41%
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-42%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -471,19 +538,11 @@ Starting Navmesh Build with 35840 sources
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-51%
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 52%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 53%
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-54%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -623,6 +682,10 @@ Starting Navmesh Build with 35840 sources
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+89%
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 90%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -631,123 +694,33 @@ Starting Navmesh Build with 35840 sources
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-93%
+92%
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Navmesh Build took 65.28 seconds
+Navmesh Build took 71.41 seconds
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Map Spawned 348 entities
-Destroying 363 old entities
+Map Spawned 135 entities
+Destroying 144 old entities
 	done.
-01/29/2018 03:15:48|Error|WebSocketSessionManager.tryGetSession|A session with the specified ID isn't found:
-                            ID: a0be96c99e5a4192b1815df5d357a312
-01/29/2018 03:15:48|Error|WebSocketSessionManager.tryGetSession|A session with the specified ID isn't found:
-                            ID: a0be96c99e5a4192b1815df5d357a312
-Spawning 73694 entities
-	3535 / 73694
-	23769 / 73694
-	34071 / 73694
-	64525 / 73694
+Spawning 9540 entities
 	done.
 Enforcing SpawnPopulation Limits
 	done.
-Initializing 74942 entity links
-	20468 / 74942
-	25743 / 74942
-	33419 / 74942
+Initializing 10457 entity links
 	done.
-Initializing 10728 stability supports
+Initializing 84 stability supports
 	done.
-Initializing 8876 conditional models
-	done.
-Initializing 73694 entity save caches
+Initializing 9540 entity save caches
 	done.
 Facepunch.Steamworks Unity: LinuxPlayer
 Facepunch.Steamworks Os: Linux
 Facepunch.Steamworks Arch: x64
 Connected to Steam
 Server startup complete
-BradleyAPC Spawned at :(306.3, 17.0, 444.2)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-71.63.136.212:51328/76561197984249327/xvincognito joined [windows/76561197984249327]
-128.193.247.163:56959/76561198041664198/m00ch joined [windows/76561198041664198]
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-72.174.1.102:36027/76561198146675577/PhelanWulf joined [osx/76561198146675577]
-PhelanWulf[8213007/76561198146675577] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] xvincognito[4922448/76561197984249327] : helooo
-128.193.247.163:56959/76561198041664198/m00ch disconnecting: disconnect
-128.193.247.163:54706/76561198041664198/m00ch has auth level 1
-72.174.1.102:40852/76561197967003322/Soli joined [windows/76561197967003322]
-Soli[7823150/76561197967003322] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-128.193.247.163:54706/76561198041664198/m00ch joined [windows/76561198041664198]
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-96.95.156.242:48390/76561198036339274/Gribb joined [windows/76561198036339274]
-Gribb[5791962/76561198036339274] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8221406/4633982] was killed by PhelanWulf[8213007/76561198146675577]
-[8221418/2184038] was killed by PhelanWulf[8213007/76561198146675577]
-PhelanWulf[8213007/76561198146675577] was killed by machete.weapon (entity)
-[8221394/2532439] was killed by m00ch[5476702/76561198041664198]
-PhelanWulf[8213007/76561198146675577] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] PhelanWulf[8213007/76561198146675577] : Thanks! lol
-[8223027/8574996] was killed by xvincognito[4922448/76561197984249327]
-[8223003/8060344] was killed by xvincognito[4922448/76561197984249327]
-[8223015/9612356] was killed by xvincognito[4922448/76561197984249327]
- [ServerVar] giving m00ch 1000 x 5.56 Rifle Ammo
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Hey, shameless self promotion
-[CHAT] m00ch[5476702/76561198041664198] : Would you all like to play some Capture the Flag sometime?
-[8222331/5590109] was killed by Soli[7823150/76561197967003322]
-[8220998/8312139] was killed by m00ch[5476702/76561198041664198]
-[8220986/1726683] was killed by m00ch[5476702/76561198041664198]
-[CHAT] PhelanWulf[8213007/76561198146675577] : Sounds fun to me!
-[8226168/5163181] was killed by Soli[7823150/76561197967003322]
-[8227547/3697033] was killed by PhelanWulf[8213007/76561198146675577]
-[8227691/3708376] was killed by m00ch[5476702/76561198041664198]
-[8223971/8806741] was killed by PhelanWulf[8213007/76561198146675577]
- [ServerVar] giving m00ch 1 x LR-300 Assault Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8227415/3957848] was killed by xvincognito[4922448/76561197984249327]
-[8228847/7984448] was killed by bradleyapc (entity)
-[8228835/7706795] was killed by bradleyapc (entity)
-[8222703/4159143] was killed by bradleyapc (entity)
- [ServerVar] giving m00ch 100 x HV 5.56 Rifle Ammo
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8228787/945740] was killed by Blunt
-[8228775/7469141] was killed by Blunt
-Saved 74,036 ents, serialization(0.01), write(0.03), disk(0.36) totalstall(0.06).
+Saved 9,617 ents, cache(0.00), write(0.01), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -755,85 +728,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[8226372/8971352] was killed by PhelanWulf[8213007/76561198146675577]
-[8225568/482427] was killed by autoturret_deployed (entity)
-73.140.97.32:40066/76561198053935664/Teal1500 joined [linux/76561198053935664]
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by machete.weapon (entity)
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by machete.weapon (entity)
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8229015/4054538] was killed by PhelanWulf[8213007/76561198146675577]
-[8229855/2538279] was killed by Soli[7823150/76561197967003322]
-[8230697/2353852] was killed by Soli[7823150/76561197967003322]
-Teal1500[286029/76561198053935664] was killed by machete.weapon (entity)
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8229339/7437133] was killed by Blunt
-[CHAT] Teal1500[286029/76561198053935664] : well it seems good now
-[8226504/7661327] was killed by PhelanWulf[8213007/76561198146675577]
-[8224283/9591178] was killed by Blunt
-[8229027/8028840] was killed by Blunt
-[8229327/2199450] was killed by Blunt
-[8221034/7723845] was killed by xvincognito[4922448/76561197984249327]
-192.168.1.1:37710/76561198014386231/Egee has auth level 1
-192.168.1.1:37710/76561198014386231/Egee joined [linux/76561198014386231]
-Egee[6947612/76561198014386231] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : ~env.time 11
-[CHAT] Egee[6947612/76561198014386231] : oh right
-73.140.97.32:40066/76561198053935664/Teal1500 disconnecting: disconnect
-73.140.97.32:40066/76561198053935664/Teal1500 kicked: Steam: AuthTicketCanceled
-[8229255/6230846] was killed by PhelanWulf[8213007/76561198146675577]
-[CHAT] Gribb[5791962/76561198036339274] : sup egge
-[CHAT] Gribb[5791962/76561198036339274] : *egee
-73.140.97.32:45565/76561198053935664/Teal1500 has auth level 1
-[CHAT] Soli[7823150/76561197967003322] : lol That startled the crap out of me
-[CHAT] m00ch[5476702/76561198041664198] : oogy boogy
-[8229243/7300440] was killed by Soli[7823150/76561197967003322]
-73.140.97.32:45565/76561198053935664/Teal1500 joined [linux/76561198053935664]
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] PhelanWulf[8213007/76561198146675577] : I feel so startled
-[8230685/5480732] was killed by Soli[7823150/76561197967003322]
-[8229363/9689358] was killed by PhelanWulf[8213007/76561198146675577]
-[CHAT] Egee[6947612/76561198014386231] : ello
-[CHAT] Soli[7823150/76561197967003322] : This server has always given me the best Rust experience lol
-[CHAT] Teal1500[286029/76561198053935664] : this is much better
-[CHAT] Egee[6947612/76561198014386231] : hey we're all here to hangout and play
-[CHAT] Egee[6947612/76561198014386231] : there's a buncha people on.... CTF??????????/
-[CHAT] Egee[6947612/76561198014386231] : m00ch pls
-Invalid Position: generic_world[8234732] explosive.timed (world) (185.1, -5004.7, -1146.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8234733] explosive.timed (world) (182.7, -5007.6, -1144.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Teal1500[286029/76561198053935664] : we could do that
-[CHAT] m00ch[5476702/76561198041664198] : Aight
-[CHAT] Egee[6947612/76561198014386231] : Yesssssssssssssss
-[CHAT] Soli[7823150/76561197967003322] : CTF is happening?
-[CHAT] m00ch[5476702/76561198041664198] : Y'all wanna hop in the Discord?
-[CHAT] Egee[6947612/76561198014386231] : oh yes
-[CHAT] m00ch[5476702/76561198041664198] : Its alot easier to explain
-Saved 74,133 ents, serialization(0.01), write(0.03), disk(0.55) totalstall(0.06).
+Saved 9,652 ents, cache(0.01), write(0.01), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -841,69 +736,8 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[8227439/6010130] was killed by xvincognito[4922448/76561197984249327]
-[8220806/9777194] was killed by xvincognito[4922448/76561197984249327]
-[8224067/5635373] was killed by xvincognito[4922448/76561197984249327]
- [ServerVar] giving Egee 1 x Semi-Automatic Pistol
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8227319/3503320] was killed by xvincognito[4922448/76561197984249327]
-[8227559/5884221] was killed by Soli[7823150/76561197967003322]
-[8229039/5123390] was killed by xvincognito[4922448/76561197984249327]
-[CHAT] Egee[6947612/76561198014386231] : should we tp the peeps here?
- [ServerVar] giving Egee 1 x Snowball
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Soli[7823150/76561197967003322] : This epic battle has consumed half of my AR's durability lol
-[CHAT] xvincognito[4922448/76561197984249327] : so worth it
-128.193.154.77:59676/76561198054805171/emu joined [windows/76561198054805171]
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Soli[7823150/76561197967003322] : Hey, so, Phelan and I are going to have to leave in a few minutes. So, we'll do our own thing?
-[CHAT] Soli[7823150/76561197967003322] : Yea, in a few
-[CHAT] Egee[6947612/76561198014386231] : :thumbsup:
-[CHAT] Egee[6947612/76561198014386231] : ~inventory.giveall pumpkin
- [ServerVar] giving xvincognito 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving PhelanWulf 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Soli 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Gribb 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Egee 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Teal1500 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving emu 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8221046/3495893] was killed by xvincognito[4922448/76561197984249327]
-[8222919/4221408] was killed by xvincognito[4922448/76561197984249327]
-[8227775/5801025] was killed by xvincognito[4922448/76561197984249327]
-[8224751/6347536] was killed by xvincognito[4922448/76561197984249327]
-Saved 74,186 ents, serialization(0.01), write(0.03), disk(0.37) totalstall(0.07).
+penguinluff[29060/76561198072661541] was killed by wolf (Wolf)
+Saved 9,667 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -911,262 +745,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-75.143.220.214:56341/76561198037116567/BluNight joined [windows/76561198037116567]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : yessssssss
-192.168.1.1:57435/76561198072661541/penguinluff has auth level 1
-[8229003/1277151] was killed by Soli[7823150/76561197967003322]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-192.168.1.1:57435/76561198072661541/penguinluff joined [linux/76561198072661541]
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8222355/1491112] was killed by Soli[7823150/76561197967003322]
-[8233318/8149528] was killed by PhelanWulf[8213007/76561198146675577]
-[8227295/7509926] was killed by PhelanWulf[8213007/76561198146675577]
- [ServerVar] giving m00ch 1000 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8227283/4303681] was killed by PhelanWulf[8213007/76561198146675577]
-[8222283/9770406] was killed by PhelanWulf[8213007/76561198146675577]
- [ServerVar] giving Teal1500 100 x  Cooked Bear Meat
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-50.53.148.151:60856/76561198007074292/Ravelord Nito joined [windows/76561198007074292]
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Stone Barricade
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8225688/8078612] was killed by Soli[7823150/76561197967003322]
-Invalid Position: generic_world[8238980] scrap (world) (13.6, -5008.0, -977.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238983] gears (world) (19.7, -5005.8, -973.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238984] stones (world) (16.9, -5005.1, -975.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238987] stones (world) (17.7, -5001.7, -979.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238989] cloth (world) (12.4, -5003.6, -983.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238990] sulfur.ore (world) (15.9, -5004.6, -983.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238991] gunpowder (world) (21.1, -5005.4, -980.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238992] explosive.timed (world) (19.1, -5002.2, -974.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238993] wood (world) (20.8, -5007.3, -982.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8238996] gunpowder (world) (14.4, -5004.0, -983.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239009] ammo.handmade.shell (world) (20.0, -5000.7, -975.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239010] ammo.rocket.basic (world) (17.0, -5003.5, -978.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239011] tarp (world) (15.4, -5001.7, -976.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239021] wood (world) (18.1, -5004.4, -979.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239022] ammo.rifle (world) (18.2, -5002.9, -977.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239040] metal.ore (world) (17.2, -5011.6, -981.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239041] building.planner (world) (16.1, -5006.4, -979.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239089] seed.pumpkin (world) (19.9, -5000.2, -976.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239091] stonehatchet (world) (15.7, -5002.1, -978.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239093] hatchet (world) (21.3, -5010.5, -978.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239096] rocket.launcher (world) (19.5, -5009.0, -979.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239097] icepick.salvaged (world) (16.8, -5006.0, -983.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239098] torch (world) (18.4, -5012.0, -976.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239256] pants (world) (163.7, -5001.6, -934.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239260] hoodie (world) (164.9, -5000.8, -935.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239261] hat.miner (world) (169.4, -5008.6, -929.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239262] burlap.gloves (world) (171.2, -5002.1, -932.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239263] metal.plate.torso (world) (165.3, -5005.4, -930.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239264] shoes.boots (world) (162.6, -5006.5, -934.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1000 x Bed
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] xvincognito[4922448/76561197984249327] : naked and ready to go!
-[CHAT] Egee[6947612/76561198014386231] : ~inventory.giveto m00ch bed 5
- [ServerVar] giving m00ch 5 x Bed
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : BAM
-[8227307/1657345] was killed by Soli[7823150/76561197967003322]
- [ServerVar] giving m00ch 100 x Bed
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8233022/8291277] was killed by Soli[7823150/76561197967003322]
-[8230889/6831099] was killed by Soli[7823150/76561197967003322]
-[8227763/1076614] was killed by PhelanWulf[8213007/76561198146675577]
-[8233046/1395808] was killed by PhelanWulf[8213007/76561198146675577]
-Invalid Position: generic_world[8239776] bed (world) (195.4, -5008.3, -957.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239781] bed (world) (191.5, -5002.0, -964.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239795] bed (world) (194.9, -5002.3, -965.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239796] bed (world) (200.0, -5010.3, -965.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239797] bed (world) (197.1, -5011.2, -962.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239798] bed (world) (194.1, -5005.5, -956.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239801] bed (world) (196.8, -5007.6, -958.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239802] bed (world) (200.8, -5010.0, -956.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239803] bed (world) (194.5, -5004.7, -954.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239804] bed (world) (200.5, -5011.2, -959.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239805] bed (world) (204.0, -5012.0, -956.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239806] bed (world) (197.9, -5009.8, -953.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239807] bed (world) (199.9, -5001.0, -953.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239808] bed (world) (199.3, -5006.2, -951.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239809] bed (world) (202.5, -5005.2, -951.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239810] bed (world) (195.5, -5010.7, -953.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239811] bed (world) (200.7, -5010.9, -956.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8239812] bed (world) (198.9, -5007.1, -950.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8225784/4636713] was killed by Soli[7823150/76561197967003322]
-[CHAT] xvincognito[4922448/76561197984249327] : teleport me polz
-[8224955/7452508] was killed by PhelanWulf[8213007/76561198146675577]
-[CHAT] BluNight[8237725/76561198037116567] : 0811
-[CHAT] Egee[6947612/76561198014386231] : blu pls
-[8221538/444413] was killed by PhelanWulf[8213007/76561198146675577]
-[CHAT] Egee[6947612/76561198014386231] : m00ch pls
-Saved 74,279 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,699 ents, cache(0.01), write(0.01), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1174,1707 +753,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[8227751/9569078] was killed by PhelanWulf[8213007/76561198146675577]
-[8222607/7534595] was killed by Soli[7823150/76561197967003322]
-[8226384/3294218] was killed by PhelanWulf[8213007/76561198146675577]
-[8221094/1128298] was killed by Soli[7823150/76561197967003322]
-[8223887/453690] was killed by Blunt
-[8220818/681486] was killed by Gribb[5791962/76561198036339274]
-[8226288/5069107] was killed by Blunt
-Invalid Position: generic_world[8241866] pistol.semiauto (world) (75.7, -5001.1, -1038.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8241867] rock (world) (78.4, -5003.8, -1042.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8226000/5459846] was killed by Gribb[5791962/76561198036339274]
-emu[4981523/76561198054805171] was killed by autoturret_deployed (entity)
-BluNight[8237725/76561198037116567] was killed by m00ch[5476702/76561198041664198]
-[8228195/3054893] was killed by Gribb[5791962/76561198036339274]
-penguinluff[29143/76561198072661541] was killed by landmine (entity)
-Teal1500[286029/76561198053935664] was killed by autoturret_deployed (entity)
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] was killed by m00ch[5476702/76561198041664198]
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8222247/9325679] was killed by Soli[7823150/76561197967003322]
-[8230589/5506489] was killed by Gribb[5791962/76561198036339274]
-emu[4981523/76561198054805171] was killed by landmine (entity)
-BluNight[8237725/76561198037116567] was killed by Egee[6947612/76561198014386231]
-penguinluff[29143/76561198072661541] was killed by Egee[6947612/76561198014386231]
-Ravelord Nito[5257386/76561198007074292] was killed by xvincognito[4922448/76561197984249327]
-Teal1500[286029/76561198053935664] was killed by m00ch[5476702/76561198041664198]
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,333 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.07).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8225808/5653844] was killed by Soli[7823150/76561197967003322]
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/building core/floor/floor.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Building Plan
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Wood
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Wood
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] PhelanWulf[8213007/76561198146675577] : Night all, have fun at CTF!
-[CHAT] Egee[6947612/76561198014386231] : cya man!
-72.174.1.102:36027/76561198146675577/PhelanWulf disconnecting: disconnect
-[CHAT] Soli[7823150/76561197967003322] : G'night, all!
-[CHAT] m00ch[5476702/76561198041664198] : Have fun
- [ServerVar] giving penguinluff 1 x Hammer
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1000 x High Quality Metal
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Semi-Automatic Pistol
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Medical Syringe
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Bandage
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Bandage
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Bandage
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Bandage
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Bandage
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-72.174.1.102:40852/76561197967003322/Soli disconnecting: disconnect
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-m00ch[5476702/76561198041664198] died (Bite)
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] was suicide by Suicide
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] was killed by beartrap (entity)
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-BluNight[8237725/76561198037116567] was killed by xvincognito[4922448/76561197984249327]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : ~inventory.giveall pumpkin 4
- [ServerVar] giving xvincognito 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Gribb 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Egee 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Teal1500 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving emu 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving BluNight 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Ravelord Nito 4 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : ENJOY YOUR FUCKIN PUMPKINS
-[CHAT] Gribb[5791962/76561198036339274] : thx babe
-[CHAT] penguinluff[29143/76561198072661541] : :O
-BluNight[8237725/76561198037116567] was killed by landmine (entity)
-Invalid Position: generic_world[8244171] fun.guitar (world) (70.6, -5007.2, -1034.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,351 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by m00ch[5476702/76561198041664198]
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] was killed by m00ch[5476702/76561198041664198]
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8237990/6542744] was killed by Gribb[5791962/76561198036339274]
-BluNight[8237725/76561198037116567] was killed by m00ch[5476702/76561198041664198]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] was killed by Ravelord Nito[5257386/76561198007074292]
-penguinluff[29143/76561198072661541] was killed by m00ch[5476702/76561198041664198]
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by Egee[6947612/76561198014386231]
-m00ch[5476702/76561198041664198] was killed by BluNight[8237725/76561198037116567]
-emu[4981523/76561198054805171] was killed by BluNight[8237725/76561198037116567]
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] was killed by xvincognito[4922448/76561197984249327]
-BluNight[8237725/76561198037116567] was killed by landmine (entity)
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8231566/3568067] was killed by Gribb[5791962/76561198036339274]
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] was killed by xvincognito[4922448/76561197984249327]
-m00ch[5476702/76561198041664198] was killed by Teal1500[286029/76561198053935664]
-Ravelord Nito[5257386/76561198007074292] was killed by Egee[6947612/76561198014386231]
-xvincognito[4922448/76561197984249327] was killed by Egee[6947612/76561198014386231]
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Egee[6947612/76561198014386231] was killed by emu[4981523/76561198054805171]
-Egee[6947612/76561198014386231] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8230577/6970524] was killed by Gribb[5791962/76561198036339274]
-Teal1500[286029/76561198053935664] died (Bullet)
-[CHAT] Egee[6947612/76561198014386231] : ~env.time
-BluNight[8237725/76561198037116567] died (Bullet)
-[CHAT] Egee[6947612/76561198014386231] : ~env.time 12
-[CHAT] Gribb[5791962/76561198036339274] : ty
-[8222955/617516] was killed by Gribb[5791962/76561198036339274]
-[CHAT] Egee[6947612/76561198014386231] : np ;)
-[CHAT] Gribb[5791962/76561198036339274] : zoombies out an about
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8221502/9904794] was killed by Gribb[5791962/76561198036339274]
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : can you hear the gunshots?
-[8229651/2135344] was killed by Gribb[5791962/76561198036339274]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : not where i'm at
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/deployable/bear trap/beartrap.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/building core/floor/floor.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Everybody swap to other house
-[CHAT] BluNight[8237725/76561198037116567] : NO
- [ServerVar] giving penguinluff 1 x Building Plan
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] BluNight[8237725/76561198037116567] : blu is blu
- [ServerVar] giving penguinluff 1 x Hammer
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1000 x Wood
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : We're doing the classes now
- [ServerVar] giving penguinluff 1000 x High Quality Metal
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] penguinluff[29143/76561198072661541] : I DIDN'T MEAN TO BREAK IT
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,475 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Ravelord Nito[5257386/76561198007074292] : what, no scope on the bolty?
-[CHAT] m00ch[5476702/76561198041664198] : Fuck you
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Red Team ready
-[CHAT] Egee[6947612/76561198014386231] : pls
-[CHAT] Teal1500[286029/76561198053935664] : we're almost ready hold on
-[CHAT] m00ch[5476702/76561198041664198] : On 3
-[CHAT] m00ch[5476702/76561198041664198] : 1
-[CHAT] m00ch[5476702/76561198041664198] : 2
-[CHAT] m00ch[5476702/76561198041664198] : 3
-Ravelord Nito[5257386/76561198007074292] was killed by m00ch[5476702/76561198041664198]
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Ravelord Nito[5257386/76561198007074292] : hax
-emu[4981523/76561198054805171] was killed by m00ch[5476702/76561198041664198]
-BluNight[8237725/76561198037116567] was suicide by Heat
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] was killed by m00ch[5476702/76561198041664198]
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] died (Bleeding)
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Egee[6947612/76561198014386231] was killed by BluNight[8237725/76561198037116567]
-Egee[6947612/76561198014386231] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] was killed by penguinluff[29143/76561198072661541]
-penguinluff[29143/76561198072661541] was killed by xvincognito[4922448/76561197984249327]
-BluNight[8237725/76561198037116567] was killed by xvincognito[4922448/76561197984249327]
-m00ch[5476702/76561198041664198] died (Bullet)
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Egee[6947612/76561198014386231] died (Bullet)
-Egee[6947612/76561198014386231] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-m00ch[5476702/76561198041664198] was killed by emu[4981523/76561198054805171]
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-BluNight[8237725/76561198037116567] was killed by xvincognito[4922448/76561197984249327]
-penguinluff[29143/76561198072661541] was killed by xvincognito[4922448/76561197984249327]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] died (Bullet)
-emu[4981523/76561198054805171] died (Bullet)
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] was killed by xvincognito[4922448/76561197984249327]
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,469 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] was killed by xvincognito[4922448/76561197984249327]
-m00ch[5476702/76561198041664198] was killed by penguinluff[29143/76561198072661541]
-penguinluff[29143/76561198072661541] was killed by m00ch[5476702/76561198041664198]
-BluNight[8237725/76561198037116567] was killed by xvincognito[4922448/76561197984249327]
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by xvincognito[4922448/76561197984249327]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-penguinluff[29143/76561198072661541] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-BluNight[8237725/76561198037116567] was killed by landmine (entity)
-[CHAT] m00ch[5476702/76561198041664198] : all done
-[8222691/8734975] was killed by Gribb[5791962/76561198036339274]
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by Egee[6947612/76561198014386231]
-[8230493/1128686] was killed by Gribb[5791962/76561198036339274]
-[8224679/828340] was killed by Gribb[5791962/76561198036339274]
-[8223911/4590487] was killed by Gribb[5791962/76561198036339274]
-BluNight[8237725/76561198037116567] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8230661/4873914] was killed by Gribb[5791962/76561198036339274]
-[8236258/8468742] was killed by Gribb[5791962/76561198036339274]
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] was killed by BluNight[8237725/76561198037116567]
-Teal1500[286029/76561198053935664] was killed by BluNight[8237725/76561198037116567]
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/player/player_corpse.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8238379/3111375] was killed by Gribb[5791962/76561198036339274]
-Teal1500[286029/76561198053935664] was killed by Ravelord Nito[5257386/76561198007074292]
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Large Medkit
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251071] hoodie (world) (152.9, -5008.6, -962.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251072] lowgradefuel (world) (156.5, -5002.3, -964.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/bed/bed_deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251073] shoes.boots (world) (153.9, -5010.0, -958.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251078] heavy.plate.pants (world) (151.8, -5003.3, -963.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251079] heavy.plate.jacket (world) (152.8, -5002.6, -963.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251080] jacket (world) (149.0, -5008.1, -958.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251081] shoes.boots (world) (156.3, -5002.2, -963.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251082] hat.beenie (world) (149.8, -5005.0, -959.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251083] mask.bandana (world) (152.2, -5009.7, -964.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251084] pants (world) (148.3, -5003.1, -957.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251085] heavy.plate.helmet (world) (153.7, -5009.4, -960.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251088] bandage (world) (154.0, -5011.3, -963.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251095] grenade.beancan (world) (151.8, -5004.0, -955.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251096] rifle.ak (world) (157.2, -5006.7, -964.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251097] pistol.python (world) (149.8, -5006.5, -963.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-m00ch[5476702/76561198041664198] was killed by barricade.metal (entity)
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-75.143.220.214:56341/76561198037116567/BluNight disconnecting: closing
-[ENTCMD] m00ch/76561198041664198 used *kill* on ent: assets/prefabs/deployable/locker/locker.deployed.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,347 ents, serialization(0.01), write(0.03), disk(0.03) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] was suicide by Suicide
-Invalid Position: generic_world[8251576] rock (world) (189.8, -5001.2, -958.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251577] torch (world) (190.1, -5004.0, -963.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251578] rifle.bolt (world) (186.0, -5007.4, -959.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251579] seed.pumpkin (world) (185.0, -5011.5, -962.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251582] bandage (world) (185.8, -5001.2, -965.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251583] bandage (world) (186.5, -5005.8, -956.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251584] rock (world) (185.0, -5000.7, -960.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251590] torch (world) (186.0, -5003.0, -958.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251591] seed.pumpkin (world) (183.1, -5008.9, -965.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251592] pumpkin (world) (186.5, -5004.1, -961.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251593] pumpkin (world) (189.7, -5002.0, -958.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251594] pumpkin (world) (183.1, -5011.9, -959.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251595] hat.boonie (world) (190.1, -5004.6, -962.7) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251598] hoodie (world) (181.8, -5004.1, -960.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251599] pants (world) (182.8, -5004.5, -965.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251742] shoes.boots (world) (184.4, -5006.0, -958.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251743] ammo.rifle (world) (189.1, -5005.7, -963.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251744] ammo.rifle.incendiary (world) (186.5, -5008.2, -957.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251745] hat.beenie (world) (189.1, -5003.8, -965.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251746] mask.bandana (world) (183.2, -5008.1, -957.2) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251747] hoodie (world) (183.7, -5003.9, -960.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251748] torch (world) (186.1, -5001.8, -956.0) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251749] bandage (world) (190.7, -5004.2, -958.3) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251750] jacket (world) (181.3, -5002.4, -963.5) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251753] pants (world) (182.5, -5003.8, -956.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251754] shoes.boots (world) (190.0, -5006.2, -960.4) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8251755] rock (world) (188.2, -5009.3, -958.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] was killed by beartrap (entity)
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Teal1500[286029/76561198053935664] was killed by landmine (entity)
-emu[4981523/76561198054805171] was killed by landmine (entity)
-Teal1500[286029/76561198053935664] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] was killed by machete.weapon (entity)
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Gribb, we're about to do a server event. It's a form of manhunt
-[CHAT] m00ch[5476702/76561198041664198] : Would you like to join?
-[CHAT] Gribb[5791962/76561198036339274] : super down
-[CHAT] m00ch[5476702/76561198041664198] : You got discord?
-[CHAT] Gribb[5791962/76561198036339274] : i don't, can download real quick
-[CHAT] m00ch[5476702/76561198041664198] : Up to you
-[8232044/6426023] was killed by Gribb[5791962/76561198036339274]
-[CHAT] m00ch[5476702/76561198041664198] : We can relay instructions in text either way is fine
-[CHAT] Gribb[5791962/76561198036339274] : text would be easier, just trying to get back to my abse rn
-[CHAT] m00ch[5476702/76561198041664198] : Gotcha
-[CHAT] m00ch[5476702/76561198041664198] : We're waiting on some peeps so no hustle
-[CHAT] Gribb[5791962/76561198036339274] : do i need any geat
-[CHAT] m00ch[5476702/76561198041664198] : A gun that can kill people
-[CHAT] Gribb[5791962/76561198036339274] : awesome
-[8223899/3565359] was killed by Gribb[5791962/76561198036339274]
- [ServerVar] giving m00ch 100 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8228015/7757832] was killed by xvincognito[4922448/76561197984249327]
-[8227175/200692] was killed by Ravelord Nito[5257386/76561198007074292]
-[8226396/8830113] was killed by Ravelord Nito[5257386/76561198007074292]
-[8224691/1444494] was killed by Gribb[5791962/76561198036339274]
-[CHAT] Egee[6947612/76561198014386231] : ~env.time 12
-[8229351/9849962] was killed by Ravelord Nito[5257386/76561198007074292]
-[CHAT] Gribb[5791962/76561198036339274] : can we keep the zombies around?
- [ServerVar] giving m00ch 1 x Metal Facemask
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Metal Chest Plate
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Hoodie
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Boots
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Pants
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Teal1500[286029/76561198053935664] : Yes they will stay for now.
- [ServerVar] giving m00ch 1 x Leather Gloves
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : heck yea
-[8241986/7046821] was killed by Gribb[5791962/76561198036339274]
-Saved 74,330 ents, serialization(0.01), write(0.03), disk(0.39) totalstall(0.07).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/locks/keypad/lock.code.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/deployable/large wood storage/box.wooden.large.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[ENTCMD] penguinluff/76561198072661541 used *kill* on ent: assets/prefabs/locks/keypad/lock.code.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Semi-Automatic Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Bolt Action Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x 4x Zoom Scope
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x 4x Zoom Scope
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x LR-300 Assault Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Longsword
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : can i buy a 4x zoom off of you mooch?
- [ServerVar] giving m00ch 1 x Holosight
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Holosight
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Assault Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] penguinluff[29143/76561198072661541] : E11
- [ServerVar] giving m00ch 1 x Pump Shotgun
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Gribb, forget about a weapon
-[CHAT] m00ch[5476702/76561198041664198] : Just bring clothes
-[CHAT] Gribb[5791962/76561198036339274] : sweet thanks
- [ServerVar] giving m00ch 100 x Bolt Action Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 100 x 4x Zoom Scope
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 100 x Weapon Lasersight
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8255021] rifle.ak (world) (-130.3, -5012.1, 1126.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 100 x Flashlight
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8255024] longsword (world) (-121.9, -5005.9, 1120.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8255025] shotgun.pump (world) (-121.8, -5011.0, 1127.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8255027] rifle.semiauto (world) (-126.2, -5008.7, 1125.6) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 100 x Flare
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Invalid Position: generic_world[8255029] rifle.lr300 (world) (-122.4, -5009.5, 1121.8) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : where should i run?
-[CHAT] m00ch[5476702/76561198041664198] : E11
-[CHAT] Gribb[5791962/76561198036339274] : thx for the tp
- [ServerVar] giving m00ch 1000 x 5.56 Rifle Ammo
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1000 x 5.56 Rifle Ammo
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Pants
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Pants
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Hoodie
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1 x Hoodie
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Hoodie
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Pants
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Leather Gloves
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Boots
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving Teal1500 1 x Bolt Action Rifle
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : ~teleport xvincognito egee
- [ServerVar] giving penguinluff 100 x Bandana Mask
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Large Wood Box
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 100 x Reindeer Antlers
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] penguinluff[29143/76561198072661541] : Clothes for the needy
-Invalid Position: generic_world[8256055] rifle.bolt (world) (-117.4, -5001.9, 1118.9) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] penguinluff[29143/76561198072661541] : No antlers for you Gribb
-[CHAT] Egee[6947612/76561198014386231] : ~teleport emu egee
-[CHAT] penguinluff[29143/76561198072661541] : You are not a deer
-[CHAT] Gribb[5791962/76561198036339274] : roger
-[CHAT] Egee[6947612/76561198014386231] : ~teleport xvincognito egee
-[CHAT] Gribb[5791962/76561198036339274] : i see how this works
-[CHAT] m00ch[5476702/76561198041664198] : Hunters can take a gun, stack of ammo, flare stack, and flashlight
-Saved 74,312 ents, serialization(0.01), write(0.03), disk(0.03) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving m00ch 1 x Repair Bench
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : ~teleport ravelord egee
- [ServerVar] giving penguinluff 1000 x Glowing Eyes
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
- [ServerVar] giving penguinluff 1000 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] penguinluff[29143/76561198072661541] : Everyone eat
-[CHAT] m00ch[5476702/76561198041664198] : Gribb, we're gonna start inside and give the deer a headstart
-[CHAT] penguinluff[29143/76561198072661541] : Drop the food
-[CHAT] Egee[6947612/76561198014386231] : ~inventory.giveto egee pumpkin
- [ServerVar] giving Egee 1 x Pumpkin
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8224355/2620883] was killed by bear (Bear)
-[CHAT] Egee[6947612/76561198014386231] : oh god pls
-[CHAT] Egee[6947612/76561198014386231] : those shots are too close
-[CHAT] Egee[6947612/76561198014386231] : i see youuuuuuuu
-[CHAT] Egee[6947612/76561198014386231] : pls stop shootin
-[CHAT] Egee[6947612/76561198014386231] : not in the cave, i see you
-[CHAT] Egee[6947612/76561198014386231] : well, someone
-[CHAT] Egee[6947612/76561198014386231] : its not too cold until its nite time
-[CHAT] Egee[6947612/76561198014386231] : its quite nice here
-[CHAT] Egee[6947612/76561198014386231] : the shade is niiiiiiice
-[CHAT] Egee[6947612/76561198014386231] : i'd come help you but you'd kill me ;(
-Saved 74,331 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.07).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Egee[6947612/76561198014386231] : had to move someone almost ran into me
-[CHAT] Egee[6947612/76561198014386231] : i stupidly planted some pumpkin seeds by my first hiding area
-[CHAT] Egee[6947612/76561198014386231] : dunno wtf i was thinking
-[CHAT] Egee[6947612/76561198014386231] : pls no
-[CHAT] Gribb[5791962/76561198036339274] : wya egee
-[CHAT] Egee[6947612/76561198014386231] : im right here
-[CHAT] Egee[6947612/76561198014386231] : iz nice and shady out here
-[CHAT] Egee[6947612/76561198014386231] : footsteps...........
-[CHAT] Egee[6947612/76561198014386231] : shoo shoo
-[CHAT] Egee[6947612/76561198014386231] : hint: i can hear the wind...
-[CHAT] Egee[6947612/76561198014386231] : hint: not in the cave
-[CHAT] Gribb[5791962/76561198036339274] : near?
-[CHAT] Egee[6947612/76561198014386231] : not that i'm aware
-[CHAT] Egee[6947612/76561198014386231] : i see blue sky
-[CHAT] Egee[6947612/76561198014386231] : i've got an excellent ocean view
-Saved 74,354 ents, serialization(0.01), write(0.03), disk(0.40) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Egee[6947612/76561198014386231] was killed by m00ch[5476702/76561198041664198]
-Egee[6947612/76561198014386231] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Egee[6947612/76561198014386231] was killed by machete.weapon (entity)
-192.168.1.1:37710/76561198014386231/Egee disconnecting: closing
-[CHAT] m00ch[5476702/76561198041664198] : Resupply
-[CHAT] m00ch[5476702/76561198041664198] : Night match
- [ServerVar] giving Teal1500 1 x Flashlight
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,355 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : how u doin egee
-[CHAT] penguinluff[29143/76561198072661541] : emu is deer nao
-[CHAT] Gribb[5791962/76561198036339274] : woops
-[CHAT] m00ch[5476702/76561198041664198] : Dead deer
-[CHAT] Ravelord Nito[5257386/76561198007074292] : oh deer, there be a deer
-Saved 74,353 ents, serialization(0.01), write(0.03), disk(0.03) totalstall(0.07).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : hint?
-[CHAT] xvincognito[4922448/76561197984249327] : bushy bushy bush bush
-xvincognito[4922448/76561197984249327] was killed by m00ch[5476702/76561198041664198]
-[CHAT] m00ch[5476702/76561198041664198] : deady deady dead dead
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-71.198.244.221:38173/76561197963979454/Fratm joined [linux/76561197963979454]
-Fratm[8265121/76561197963979454] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Fratm[8265121/76561197963979454] was killed by machete.weapon (entity)
-Fratm[8265121/76561197963979454] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Yall can hunt me now
-[CHAT] Fratm[8265121/76561197963979454] : damn way too many zombies
-[CHAT] xvincognito[4922448/76561197984249327] : you should kill them
-[CHAT] Teal1500[286029/76561198053935664] : its something we're trying
-[CHAT] Fratm[8265121/76561197963979454] : with my torch
-[CHAT] Ravelord Nito[5257386/76561198007074292] : yes
-[CHAT] xvincognito[4922448/76561197984249327] : make a spear
-[CHAT] m00ch[5476702/76561198041664198] : You can throw the rock
-[CHAT] Ravelord Nito[5257386/76561198007074292] : do it or you're bad at rust
-[CHAT] m00ch[5476702/76561198041664198] : It two shots turrets
-[8230841/9762159] was killed by Fratm[8265121/76561197963979454]
-Saved 74,361 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Fratm[8265121/76561197963979454] was killed by machete.weapon (entity)
-71.198.244.221:38173/76561197963979454/Fratm disconnecting: disconnect
-m00ch[5476702/76561198041664198] was killed by emu[4981523/76561198054805171]
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-m00ch[5476702/76561198041664198] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Ravelord Nito[5257386/76561198007074292] was killed by emu[4981523/76561198054805171]
-Ravelord Nito[5257386/76561198007074292] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-50.53.148.151:60856/76561198007074292/Ravelord Nito disconnecting: disconnect
-emu[4981523/76561198054805171] died (Bleeding)
-emu[4981523/76561198054805171] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] m00ch[5476702/76561198041664198] : Gribb, where you want to be dropped off
-[CHAT] Gribb[5791962/76561198036339274] : hqm
-xvincognito[4922448/76561197984249327] was killed by Gribb[5791962/76561198036339274]
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[CHAT] Gribb[5791962/76561198036339274] : ty fam
-73.140.97.32:45565/76561198053935664/Teal1500 disconnecting: closing
-[CHAT] m00ch[5476702/76561198041664198] : Keep it real
-128.193.154.77:59676/76561198054805171/emu disconnecting: disconnect
-[CHAT] Gribb[5791962/76561198036339274] : it was fun
-[CHAT] m00ch[5476702/76561198041664198] : Thanks for playing
-[CHAT] m00ch[5476702/76561198041664198] : We love having people
-[CHAT] Gribb[5791962/76561198036339274] : this is my fave server for sure, no salt on this meal
-128.193.247.163:54706/76561198041664198/m00ch disconnecting: closing
-Invalid Position: generic_world[8269369] rifle.bolt (world) (-216.3, -5000.6, 1012.1) (destroying)
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,423 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-77.217.202.130:58222/76561198277931545/markoivanovic joined [windows/76561198277931545]
-markoivanovic[5332198/76561198277931545] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-xvincognito[4922448/76561197984249327] was killed by Radiation
-xvincognito[4922448/76561197984249327] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-71.63.136.212:51328/76561197984249327/xvincognito disconnecting: closing
-77.217.202.130:58222/76561198277931545/markoivanovic disconnecting: disconnect
-Saved 74,390 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.07).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-192.168.1.1:57435/76561198072661541/penguinluff disconnecting: disconnect
-[8228171/9535555] was killed by Gribb[5791962/76561198036339274]
-[8229147/9635863] was killed by Gribb[5791962/76561198036339274]
-[8253473/3076501] was killed by Gribb[5791962/76561198036339274]
-[8224379/2003750] was killed by Gribb[5791962/76561198036339274]
-[8226312/4723635] was killed by Gribb[5791962/76561198036339274]
-[8225952/7886913] was killed by Gribb[5791962/76561198036339274]
-[8224643/4610521] was killed by Gribb[5791962/76561198036339274]
-[8221634/4561453] was killed by Gribb[5791962/76561198036339274]
-[8221646/6112164] was killed by Gribb[5791962/76561198036339274]
-[8229531/4598489] was killed by Gribb[5791962/76561198036339274]
-[8220830/2510109] was killed by Gribb[5791962/76561198036339274]
-[8274658/9771114] was killed by Gribb[5791962/76561198036339274]
-Gribb[5791962/76561198036339274] was killed by machete.weapon (entity)
-Gribb[5791962/76561198036339274] has entered the game
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,443 ents, serialization(0.01), write(0.03), disk(0.04) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8274670/775172] was killed by Gribb[5791962/76561198036339274]
-[8224631/1083433] was killed by Gribb[5791962/76561198036339274]
-[8225820/3280984] was killed by Gribb[5791962/76561198036339274]
-[8224235/266694] was killed by Gribb[5791962/76561198036339274]
-Saved 74,456 ents, serialization(0.01), write(0.03), disk(0.06) totalstall(0.07).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[8220794/1239201] was killed by Gribb[5791962/76561198036339274]
-[8231542/8148759] was killed by Gribb[5791962/76561198036339274]
-[8239244/4471944] was killed by Gribb[5791962/76561198036339274]
-[8220710/3134066] was killed by Gribb[5791962/76561198036339274]
-[8226300/3987675] was killed by Gribb[5791962/76561198036339274]
-[8223111/7808270] was killed by Gribb[5791962/76561198036339274]
-[8274646/2914878] was killed by Gribb[5791962/76561198036339274]
-Saved 74,471 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,460 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,439 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/patrol helicopter/patrolhelicopter.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,454 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,455 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,463 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-96.95.156.242:48390/76561198036339274/Gribb disconnecting: disconnect
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,485 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,492 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,495 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,477 ents, serialization(0.01), write(0.03), disk(0.05) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,465 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,468 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,446 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/patrol helicopter/patrolhelicopter.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,463 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,460 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,450 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,456 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,428 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,418 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,434 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,410 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,414 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,428 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,414 ents, serialization(0.01), write(0.03), disk(0.02) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,399 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,710 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2890,7 +769,107 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,384 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,706 ents, cache(0.00), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,719 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,716 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,726 ents, cache(0.00), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,760 ents, cache(0.01), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[event] assets/prefabs/npc/ch47/ch47scientists.entity.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,767 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,751 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[71917/7801731] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[71893/336704] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[71925/567928] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[71909/8694128] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[71901/3028003] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,744 ents, cache(0.01), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,768 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2902,7 +881,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,352 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,774 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2910,35 +889,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,368 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,351 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,377 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saving complete
- 
-(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Saved 74,372 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,767 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2950,7 +901,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,356 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,772 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2958,7 +909,15 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,330 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,764 ents, cache(0.00), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,769 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2970,7 +929,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,356 ents, serialization(0.01), write(0.03), disk(0.03) totalstall(0.06).
+Saved 9,757 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2978,7 +937,11 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,339 ents, serialization(0.01), write(0.03), disk(0.10) totalstall(0.06).
+[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,764 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2986,7 +949,7 @@ Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Saved 74,339 ents, serialization(0.01), write(0.03), disk(0.01) totalstall(0.06).
+Saved 9,770 ents, cache(0.00), write(0.00), disk(0.00).
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -2995,6 +958,106 @@ Saving complete
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 [Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,776 ents, cache(0.00), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,779 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,788 ents, cache(0.00), write(0.01), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,791 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[event] assets/prefabs/npc/cargo plane/cargo_plane.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,764 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[event] assets/prefabs/npc/patrol helicopter/patrolhelicopter.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,784 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[event] assets/prefabs/npc/ch47/ch47scientists.entity.prefab
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,789 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[89083/9276766] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[89091/2146027] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[89107/8589839] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[89075/4013329] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[89099/9394125] changed its network group to null
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saved 9,793 ents, cache(0.00), write(0.00), disk(0.00).
+ 
+(Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Saving complete
  
 (Filename: /home/builduser/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

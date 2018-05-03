@@ -1,4 +1,4 @@
-FROM egeeio/rustserver
+FROM egeeio/rustserver-modded
 
 COPY run.sh /usr/bin/run
 COPY update.sh /usr/bin/update

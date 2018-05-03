@@ -15,8 +15,8 @@ services:
     env_file:
       - vars.env
     ports:
-    - "28015:28015/udp"
-    - "28016:28016"
+    - "28025:28025/udp"
+    - "28026:28026"
 networks:
   default:
     external:
