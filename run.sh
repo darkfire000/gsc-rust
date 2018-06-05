@@ -1,7 +1,6 @@
 #!/bin/bash
 TEMP_DIR="/home/gsc/rustserver"
 WORK_DIR="/home/gsc/server_files"
-echo "before"
 if [ -d "$TEMP_DIR" ]; then
   echo "Beginning initial bootstrap, please wait..."
   cp -r $TEMP_DIR/* $WORK_DIR
