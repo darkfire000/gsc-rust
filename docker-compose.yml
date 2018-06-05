@@ -9,6 +9,8 @@ services:
     mem_reservation: 3000m
     build:
       context: .
+      args:
+        uid: ${uid}
     env_file:
       - vars.env
     ports:

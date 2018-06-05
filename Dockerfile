@@ -4,6 +4,8 @@ COPY run.sh /usr/bin/run
 COPY update.sh /usr/bin/update
 RUN chmod +x /usr/bin/run
 RUN chmod +x /usr/bin/update
+ARG uid
+RUN usermod -u ${uid} gsc
 USER gsc
 WORKDIR /home/gsc
 RUN update
