@@ -7,7 +7,7 @@ if [ -d "$TEMP_DIR" ]; then
   rm -rf $TEMP_DIR
   echo "Bootstrap finished, launching server..."
 fi
-
+echo "lets go!"
 $WORK_DIR/RustDedicated \
   +server.ip ${IP} \
   +server.port ${PORT} \
@@ -18,5 +18,5 @@ $WORK_DIR/RustDedicated \
   +rcon.ip ${IP} \
   +rcon.port ${RCONPORT} \
   +rcon.password ${RCONPASSWORD} \
-  -logfile server.log &
+  -logfile $WORK_DIR/server.log &
 tail -f $WORK_DIR/server.log
