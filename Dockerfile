@@ -10,7 +10,5 @@ USER gsc
 WORKDIR /home/gsc
 RUN update
 ENV LD_LIBRARY_PATH=/home/gsc/rustserver:/home/gsc/rustserver/RustDedicated_Data:{$LD_LIBRARY_PATH}
-ENV update=/update
-ENV run=/run
 
 CMD ["run"]
