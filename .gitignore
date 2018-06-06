@@ -5,3 +5,4 @@
 rust/storage/*
 rust/user*
 server.log
+server_files/*
