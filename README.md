@@ -1,7 +1,7 @@
 # gsc-rust - Game Server Container for Rust
 <a href="www.egee.io"><img src="https://i.imgur.com/Mvjrkqo.png" alt="Rust on Docker" width="300" /></a>
 
-[![Build Status](https://travis-ci.org/egee-irl/gsc-rust.svg?branch=unstable)](https://travis-ci.org/egee-irl/gsc-rust)
+[![Build Status](https://travis-ci.org/egee-irl/gsc-rust.svg?branch=stable)](https://travis-ci.org/egee-irl/gsc-rust)
 [![Chat / Support](https://img.shields.io/badge/Chat%20%2F%20Support-discord-7289DA.svg?style=flat)](https://discord.gg/42PMX5N)
 [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)](https://github.com/egee-irl/gsc-rust/blob/stable/LICENSE)
 
