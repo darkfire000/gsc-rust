@@ -17,7 +17,3 @@ services:
     ports:
     - "28015:28015/udp"
     - "28016:28016"
-networks:
-  default:
-    external:
-      name: egeeio_network
