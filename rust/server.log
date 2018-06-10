@@ -1,1 +1,263 @@
+Found path: /opt/rustserver/RustDedicated
+Mono path[0] = '/opt/rustserver/RustDedicated_Data/Managed'
+Mono config path = '/opt/rustserver/RustDedicated_Data/MonoBleedingEdge/etc'
+Preloaded 'libRakNet.so'
+Preloaded 'libRustNative.so'
+Preloaded 'libeac_server.so'
+Preloaded 'libeasyanticheat.so'
+Preloaded 'libsteam_api64.so'
+Preloaded 'steamclient.so'
+Unable to preload the following plugins:
+	libRenderer.so
+	libRustNative.so
+	libRenderer.so
+PlayerPrefs - Creating folder: /root/.config/unity3d/Facepunch Studios LTD
+PlayerPrefs - Creating folder: /root/.config/unity3d/Facepunch Studios LTD/Rust
+Initialize engine version: 2018.1.0f2 (d4d99f31acba)
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.173 seconds
+WARNING: Shader Unsupported: 'Hidden/Internal-ScreenSpaceShadows' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Internal-ScreenSpaceShadows' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/Rust/Standard Decal (Specular setup)' - Setting to default shader.
+UnloadTime: 1.182000 ms
+Bootstrap Startup
+System
+	Name: ed538fb14e4a
+	OS:   Linux 4.4 unknown 64bit
 
+CPU
+	Model:  AMD FX(tm)-6300 Six-Core Processor
+	Cores:  6
+	Memory: 15944 MB
+
+GPU
+	Model:  Null Device
+	API:    NULL 1.0 [1.0]
+	Memory: 128 MB
+	SM:     30
+
+Process
+	Memory:   0 MB
+
+Mono
+	Collects: 18
+	Memory:   0 MB
+
+
+
+Manifest Metadata Loaded
+	11426 pooled strings
+	13 mesh colliders
+	5133 prefab properties
+	388 effect categories
+	558 entity names
+	86 skinnable names
+Command Line: "/opt/rustserver/RustDedicated" "+server.ip" ""0.0.0.0"" "+server.port" ""28015"" "+server.tickrate" ""30"" "+server.identity" ""rust"" "+server.saveinterval" ""300"" "+rcon.web" ""1"" "+rcon.ip" ""0.0.0.0"" "+rcon.port" ""28016"" "+rcon.password" ""******"" "-logfile" "server.log" 
+server.ip: "0.0.0.0"
+server.port: "28015"
+server.tickrate: "30"
+server.identity: "rust"
+server.saveinterval: "300"
+rcon.web: "True"
+rcon.ip: "0.0.0.0"
+rcon.port: "28016"
+Command 'rcon.password' not found
+Command 'logfile' not found
+[Manifest] URI IS "https://api.facepunch.com/api/public/manifest/?public_key=j0VF6sNnzn9rwt9qTZtI02zTYK8PRdN1"
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+server.ip: "0.0.0.0"
+server.port: "28015"
+server.tickrate: "30"
+server.identity: "rust"
+server.saveinterval: "300"
+rcon.web: "True"
+rcon.ip: "0.0.0.0"
+rcon.port: "28016"
+Command 'rcon.password' not found
+Command 'logfile' not found
+Server Config Loaded
+Running server/rust/cfg/bans.cfg
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+Running server/rust/cfg/users.cfg
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+Manifest Assets Loaded
+	86 skinnable objects
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Waveform' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Waveform' - Setting to default shader.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 64)
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain BaseMap' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/LightMeter' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/LightMeter' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Histogram' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Histogram' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Vectorscope' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Vectorscope' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/FinalPass' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/MultiScaleVO' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/MultiScaleVO' - Setting to default shader.
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain' - All passes removed
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/ScreenSpaceReflections' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/ScreenSpaceReflections' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/DepthOfField' - Pass 'COC CALCULATION' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/DepthOfField' - Pass 'COC CALCULATION' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/DepthOfField' - Setting to default shader.
+UnloadTime: 8.859000 ms
+[CoverageQueries] Disabled due to unsupported Async GPU Reads on device Null
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+[CustomProbe] Initialization failed. No cubemap ortho basis defined for Null
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+Floating point textures aren't supported on this device (Main Camera (UnityStandardAssets.CinematicEffects.TonemappingColorGrading))
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+Plugins: Couldn't open /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so, error: /opt/rustserver/RustDedicated_Data/Plugins/x86_64/libRenderer.so: undefined symbol: glXGetProcAddressARB
+ 
+(Filename:  Line: 237)
+
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/libRenderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/Renderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/libRenderer
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/libRenderer.so
+Fallback handler could not load library /opt/rustserver/RustDedicated_Data/Mono/libRenderer
+
+Unloading 7841 unused Assets to reduce memory usage. Loaded Objects now: 30892.
+Total: 193.074000 ms (FindLiveObjects: 3.509000 ms CreateObjectMapping: 3.806000 ms MarkObjects: 178.775000 ms  DeleteObjects: 6.982000 ms)
+
+Asset Warmup (1/2827)
+Asset Warmup (20/2827)
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+Asset Warmup (29/2827)
+Asset Warmup (93/2827)
+Asset Warmup (97/2827)
+Asset Warmup (142/2827)
+Asset Warmup (211/2827)
+Asset Warmup (219/2827)
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+Asset Warmup (231/2827)
+Asset Warmup (237/2827)
+Asset Warmup (241/2827)
+Asset Warmup (245/2827)
+Asset Warmup (254/2827)
+Asset Warmup (291/2827)
+Asset Warmup (317/2827)
+Asset Warmup (347/2827)
+Asset Warmup (456/2827)
+Asset Warmup (850/2827)
+Asset Warmup (902/2827)
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+Asset Warmup (922/2827)
+Asset Warmup (924/2827)
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+Asset Warmup (1055/2827)
+Asset Warmup (1128/2827)
+Asset Warmup (1177/2827)
+Asset Warmup (1203/2827)
+Asset Warmup (1241/2827)
+Asset Warmup (1365/2827)
+Asset Warmup (1418/2827)
+Asset Warmup (1423/2827)
+Asset Warmup (1426/2827)
+Asset Warmup (1435/2827)
+Asset Warmup (1471/2827)
+Asset Warmup (1490/2827)
+Asset Warmup (1688/2827)
+Asset Warmup (1732/2827)
+Asset Warmup (1785/2827)
+Asset Warmup (1840/2827)
+Asset Warmup (1859/2827)
+Asset Warmup (1875/2827)
+Asset Warmup (1931/2827)
+Asset Warmup (1935/2827)
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Vectorscope' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Vectorscope' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/FinalPass' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Histogram' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Histogram' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/MultiScaleVO' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/MultiScaleVO' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/DepthOfField' - Pass 'COC CALCULATION' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/DepthOfField' - Pass 'COC CALCULATION' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/DepthOfField' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Waveform' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/Waveform' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/ScreenSpaceReflections' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/ScreenSpaceReflections' - Setting to default shader.
+WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/LightMeter' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Hidden/PostProcessing/Debug/LightMeter' - Setting to default shader.
+Asset Warmup (1962/2827)
+Asset Warmup (1977/2827)
+Asset Warmup (2026/2827)
+Asset Warmup (2110/2827)
+Asset Warmup (2165/2827)
+Asset Warmup (2193/2827)
+Asset Warmup (2323/2827)
+Asset Warmup (2549/2827)
+Asset Warmup (2706/2827)
+Asset Warmup (2748/2827)
+Asset Warmup (2796/2827)
+Asset Warmup (2809/2827)
+Asset Warmup (2827/2827)
+WebSocket RCon Started on 28016
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+Generating procedural map of size 3500 with seed 1
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+[1.1s] Loading World
+ 
+(Filename: /home/builduser/buildslave/unity/build/Runtime/Export/Debug.bindings.h Line: 43)
+
+Shader 'Nature/Terrain/Diffuse': dependency 'AddPassShader' shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+Shader 'Hidden/TerrainEngine/Splatmap/Standard-AddPass': fallback shader 'Hidden/TerrainEngine/Splatmap/Diffuse-AddPass' not found
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Blend 4-Way' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
+WARNING: Shader Unsupported: 'Rust/Standard Terrain Blend (Specular setup)' - All passes removed
