@@ -1,10 +1,9 @@
 #!/bin/bash
-TEMP_DIR="/home/gsc/rustserver"
 WORK_DIR="/home/gsc/server_files"
-if [ -d "$TEMP_DIR" ]; then
+ESSENTIAL_FILE="$WORK_DIR/RustDedicated"
+if [ ! -f "$ESSENTIAL_FILE" ]; then
   echo "Beginning initial bootstrap, please wait..."
-  cp -r $TEMP_DIR/* $WORK_DIR
-  rm -rf $TEMP_DIR
+  update
   echo "Bootstrap finished, launching server..."
 fi
 $WORK_DIR/RustDedicated \
